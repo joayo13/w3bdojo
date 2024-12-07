@@ -5,6 +5,6 @@
 body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-a {
-    text-decoration: underline;
-}
+  a {
+    @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+ }
