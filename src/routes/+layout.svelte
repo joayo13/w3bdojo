@@ -1,14 +1,28 @@
 <script lang="ts">
 	import '../app.css';
+	import DarkModeButton from '../components/DarkModeButton.svelte';
+	import LightModeButton from '../components/LightModeButton.svelte';
+	let darkMode = $state(false);
 	let { children } = $props();
+
+	function toggleMode() {
+		darkMode = !darkMode;
+	}
 </script>
 
-<nav class="fixed bg-neutral-900 h-16 w-full z-10">
-	
+<nav class="fixed z-10 h-16 w-full bg-neutral-900">
+	{#if darkMode === true}
+		<DarkModeButton {toggleMode} />
+	{:else}
+		<LightModeButton {toggleMode} />
+	{/if}
 </nav>
-<nav aria-labelledby="lessons-header" class="hidden md:flex flex-col fixed w-80 h-screen pt-16 px-2 bg-neutral-200 text-right">
-	<h2 class="text-2xl mt-16" id="lessons-header">Lessons</h2>
-	<ul class="flex flex-col gap-8 text-xl mt-8">
+<nav
+	aria-labelledby="lessons-header"
+	class="fixed hidden h-screen w-80 flex-col bg-neutral-200 px-2 pt-16 text-right md:flex"
+>
+	<h2 class="mt-16 text-2xl" id="lessons-header">Lessons</h2>
+	<ul class="mt-8 flex flex-col gap-8 text-xl">
 		<li>
 			<a href="/lesson-1">Lesson 1: Keyboard Accessibility</a>
 		</li>
@@ -17,7 +31,6 @@
 		</li>
 	</ul>
 </nav>
-<div class="md:pl-80 pt-32 bg-neutral-50 text-neutral-900 flex justify-center">
-{@render children()}
+<div class="flex justify-center bg-neutral-50 pt-32 text-neutral-900 md:pl-80">
+	{@render children()}
 </div>
-
