@@ -19,7 +19,7 @@
 </script>
 
 <nav class="fixed flex items-center shadow-sm z-10 h-16 w-full bg-neutral-50 dark:bg-neutral-900">
-	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class="border rounded-sm border-neutral-500 hover:border-neutral-400 bg-moon-svg dark:bg-sun-svg size-12"></button>
+	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class="border rounded-lg border-neutral-500 hover:border-neutral-400 bg-moon-svg dark:bg-sun-svg size-12"></button>
 </nav>
 <nav
 	aria-labelledby="lessons-header"
