@@ -18,7 +18,7 @@
 	}
 </script>
 
-<nav class="fixed flex items-center justify-between shadow-sm z-10 h-16 w-full px-2 bg-neutral-100 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200">
+<nav class="fixed flex items-center justify-between shadow-sm z-10 h-16 w-full px-2 bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-200">
 	<p class="text-xl">W.A.I.T</p>
 	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class=" border rounded-lg border-neutral-500 hover:border-neutral-400 bg-moon-svg dark:bg-sun-svg size-12"></button>
 </nav>
@@ -36,6 +36,6 @@
 		</li>
 	</ul>
 </nav>
-<div class="flex justify-center bg-neutral-50 dark:bg-neutral-950 pt-32 text-neutral-900 dark:text-neutral-200 min-h-screen md:pl-80">
+<div class="flex justify-center bg-neutral-100 dark:bg-neutral-900 pt-32 text-neutral-900 dark:text-neutral-200 min-h-screen md:pl-80">
 	{@render children()}
 </div>
