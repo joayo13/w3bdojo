@@ -9,3 +9,6 @@ body {
 a {
 	@apply underline;
 }
+:root:has(.no-doc-scroll) {
+	overflow:hidden;
+  }
