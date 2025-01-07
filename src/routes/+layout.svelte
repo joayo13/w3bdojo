@@ -71,8 +71,8 @@
 {#if mobileNavLinksVisible}
  <nav
  aria-labelledby="lessons-header"
- transition:slide={{ delay: 100, duration: 300, easing: quintOut, axis: 'y' }}
- class="fixed h-screen w-screen flex-col bg-neutral-200 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-200 px-4 pt-16 text-left"
+ transition:slide={{ delay: 100, duration: 300, easing: quintOut, axis: 'x' }}
+ class="fixed right-0  whitespace-nowrap h-screen w-80 flex-col bg-neutral-200 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-200 px-4 pt-16 text-left"
 >
  <h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
  <ul class="mt-8 flex flex-col gap-8 text-xl">
