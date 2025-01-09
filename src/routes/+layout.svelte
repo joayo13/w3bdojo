@@ -52,17 +52,17 @@
 	<h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
 	<ul class="mt-8 flex flex-col gap-8 text-xl relative">
 		<li>
-			<a href="/lesson-1">Lesson 1: Keyboard Accessibility</a>
+			<a href="/lessons/lesson-1">Lesson 1: Keyboard Accessibility</a>
 		</li>
 		<li>
-			<a href="/lesson-1">Lesson 2: ARIA 101</a>
+			<a href="/lessons/lesson-2">Lesson 2: ARIA 101</a>
 		</li>
 		<li>
-			<a href="/lesson-1">Lesson 3: REMS</a>
+			<a href="/lessons/lesson-3">Lesson 3: REMS</a>
 		</li>
 		<div class="h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
-	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class="w-20 ml-auto h-8 border border-neutral-900 dark:border-neutral-200 rounded-full relative">
-		<div class="absolute bg-moon-svg dark:bg-sun-svg size-8 right-0 top-1/2 -translate-y-1/2 dark:left-0"></div>
+	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class="w-16 ml-auto h-8 border border-neutral-900 dark:border-neutral-200 rounded-full relative">
+		<div class="absolute bg-moon-svg dark:bg-sun-svg size-8 right-0 dark:left-0 top-1/2 -translate-y-1/2"></div>
 	</button>
 	</ul>
 	
@@ -83,16 +83,16 @@
  <h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
  <ul class="mt-8 flex flex-col gap-8 text-xl">
 	 <li>
-		 <a href="/lesson-1">Lesson 1: Keyboard Accessibility</a>
+		 <a href="/lessons/lesson-1">Lesson 1: Keyboard Accessibility</a>
 	 </li>
 	 <li>
-		 <a href="/lesson-1">Lesson 2: ARIA 101</a>
+		 <a href="/lessons/lesson-2">Lesson 2: ARIA 101</a>
 	 </li>
 	 <li>
-		 <a href="/lesson-1">Lesson 3: REMS</a>
+		 <a href="/lessons/lesson-3">Lesson 3: REMS</a>
 	 </li>
 	 <div class="h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
-	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class="w-20 h-8 border border-neutral-900 dark:border-neutral-200 rounded-full relative">
+	<button onclick={toggleDarkMode} aria-label="Toggle dark mode" aria-pressed={darkMode} class="w-16 h-8 border border-neutral-900 dark:border-neutral-200 rounded-full relative">
 		<div class="absolute bg-moon-svg dark:bg-sun-svg size-8 right-0 top-1/2 -translate-y-1/2 dark:left-0"></div>
 	</button>
  </ul>
