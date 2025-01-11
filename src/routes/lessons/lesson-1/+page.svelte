@@ -7,6 +7,25 @@
 	<p class="mt-2 text-xl">
 		As you likely already know there are many types of elements or “tags” within HTML. Most commonly seen are tags such as "a"(otherwise known as anchor tags, these are what links are on a page), "button", "select" etc. We will stick to these as they are simple examples, but take note that there are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">many many more elements.</a> You can navigate through elements by using tab to move forwards, and shift + tab to move backwards.
 	</p>
-	<h2 class="mt-8 text-2xl">Contributing</h2>
-	<p class="mt-2 text-xl">If you're looking to get some experience with open-source, here's a place to do it! Whether it be suggestions for a new lesson or improvements to the structure of existing ones. <a href="https://github.com/joayo13/wait/issues">Create a new issue</a> and start helping today! </p>
-	<a href="/lesson-1" class="block mt-8 text-2xl">Start Lesson 1</a>
+	<h2 class="mt-8 text-2xl">Here's a button:</h2>
+	<button onclick={() => alert("Yay!")} class="tab-button py-2 px-4 border border-inherit rounded-sm text-2xl my-8">Tab to me!</button>
+	<p class="mt-2 text-xl"> Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when navigating to the button it will have a line around it to indicate that it is in a “focus” state.
+		This is meant to be very noticeable by default. Which is great since it’ll be easy to see for our visually impaired users.</p>
+		<p class="text-xl mt-8">Pressing the “Enter” or “Space” key will trigger the associated action on the element. Try doing that to the button.</p>
+		<h2 class="mt-8 text-2xl">Select an option:</h2>
+		<p class="mt-8 text-xl">
+		Let’s interact with the "select" tag that has a few corresponding "option"’s. Use tab or shift + tab as before followed by Enter or Space, but once selected, you can navigate the options with the arrow keys. Navigate to “spongebob” and press Enter or Space key.
+	</p>
+	<select class="mt-8 text-xl" onchange={(e) => e.currentTarget.value === "Spongebob" ? alert("I'm ready!") : null} >
+		<option>Shrek</option>
+		<option>Spiderman</option>
+		<option>Spongebob</option>
+	</select>
+	<p class="mt-8 text-xl">
+		As you can see, these tags are already designed to handle keyboard navigation, which is very convenient for us as developers. This leads us into an important realization: using the correct HTML tags for the job will make a web application accessible by default.
+	</p>
+	<h2 class="mt-8 text-2xl">1b: Semantic HTML &gt; Custom Roles and Attributes</h2>
+	<p class="mt-2 text-xl">
+		By understanding what HTML tags to use for the job, we can already make accessible applications! But there are some cases where we need to add styles or functionality that the native tag does not offer. This is often seen with the select element. As you may have noticed, it looks rather bland. And it can only be stylized to a certain extent. If we wanted to, we could build one from scratch with a div. Then we would be able to control all of the styles 100%.
+However, just a div alone would now strip away the accessibility that came with the select element. How do we handle this? That is where we use roles and attributes.
+	</p>
