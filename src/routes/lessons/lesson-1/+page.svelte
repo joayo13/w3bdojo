@@ -1,3 +1,7 @@
+<script>
+	import CodeBlock from "../../../components/CodeBlock.svelte";
+</script>
+
 <h1 class="text-4xl">Keyboard Navigation and Semantic HTML</h1>
 	<p class="mt-8 text-xl">
 		As you know, there are plenty of folks in the world that cannot use both hands. Or maybe some can’t see the mouse on the screen due to visual impairment. Whatever the case, accommodating these users is an absolute necessity. So make sure to pay close attention here.
@@ -16,7 +20,7 @@
 		<p class="mt-8 text-xl">
 		Let’s interact with the "select" tag that has a few corresponding "option"’s. Use tab or shift + tab as before followed by Enter or Space, but once selected, you can navigate the options with the arrow keys. Navigate to “spongebob” and press Enter or Space key.
 	</p>
-	<select class="mt-8 text-xl" onchange={(e) => e.currentTarget.value === "Spongebob" ? alert("I'm ready!") : null} >
+	<select class="mt-8 text-xl text-neutral-900" onchange={(e) => e.currentTarget.value === "Spongebob" ? alert("I'm ready!") : null} >
 		<option>Shrek</option>
 		<option>Spiderman</option>
 		<option>Spongebob</option>
@@ -29,3 +33,6 @@
 		By understanding what HTML tags to use for the job, we can already make accessible applications! But there are some cases where we need to add styles or functionality that the native tag does not offer. This is often seen with the select element. As you may have noticed, it looks rather bland. And it can only be stylized to a certain extent. If we wanted to, we could build one from scratch with a div. Then we would be able to control all of the styles 100%.
 However, just a div alone would now strip away the accessibility that came with the select element. How do we handle this? That is where we use roles and attributes.
 	</p>
+	<CodeBlock language="html" code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
+	    <span id='select-label'>Choose an option</span>
+	  </div>" />
