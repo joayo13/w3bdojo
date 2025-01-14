@@ -100,6 +100,6 @@
 {/if}
  <!-- /mobile nav links -->
 
-<div class="flex justify-center bg-neutral-100 dark:bg-neutral-900 pt-32 text-neutral-900 dark:text-neutral-200 min-h-screen md:pl-80">
+<div class="flex justify-center bg-neutral-100 dark:bg-neutral-900 pt-32 text-neutral-900 dark:text-neutral-200 min-h-screen md:pl-80 text-xl">
 	{@render children()}
 </div>

@@ -11,8 +11,8 @@
     });
   </script>
   
-  <pre class="">
-    <code class="language-{language}">
+  <pre>
+    <code class="language-{language} text-base">
       {@html code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}
     </code>
   </pre>
