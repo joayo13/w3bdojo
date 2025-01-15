@@ -1,5 +1,8 @@
 <script>
 	import CodeBlock from "../../../components/CodeBlock.svelte";
+	import Quiz from "../../../components/Quiz.svelte";
+	import RadioGroup from "../../../components/RadioGroup.svelte";
+	let isSubmitted = $state(false);
 </script>
 
 <h1 class="text-4xl">Keyboard Navigation and Semantic HTML</h1>
@@ -64,3 +67,4 @@ However, just a div alone would now strip away the accessibility that came with 
 	</ol>
 	<p class="mt-8 ">That was exhausting.. All of this just to emulate what was already there in the select tag. And we haven’t even added support for using the up and down arrow keys on the options. Now you can see why it is best to avoid custom implementations like this as much as possible, to save yourself the headache. That’s not to say it isn’t useful to know these roles and attributes. In later lessons we'll dive deeper into good use cases for these roles and attributes.
 	</p>
+	<Quiz bind:isSubmitted ><RadioGroup name="who's that pokemon" options={["Option A", "Option B"]} correctAnswer="Option A" isSubmitted={isSubmitted}/></Quiz>
