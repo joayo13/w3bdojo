@@ -64,12 +64,14 @@
 	would now strip away the accessibility that came with the select element. How do we handle this?
 	That is where we use roles and attributes.
 </p>
-<CodeBlock
-	language="html"
-	code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
+<div class="mx-auto w-[95vw] md:w-[26rem] lg:w-[40rem]">
+	<CodeBlock
+		language="html"
+		code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
 	    <span id='select-label'>Choose an option</span>
 	  </div>"
-/>
+	/>
+</div>
 <h3 class="mt-8 text-2xl">Explanation of the Attributes</h3>
 <ol class="mt-2 flex flex-col gap-2">
 	<li>
@@ -110,9 +112,14 @@
 </p>
 <Quiz bind:isSubmitted
 	><RadioGroup
-		name="who's that pokemon"
-		options={['Option A', 'Option B']}
-		correctAnswer="Option A"
+		name="Who benefits from accessible web applications?"
+		options={[
+			'Visually Impaired Users',
+			'Physically Disabled Users',
+			'Cognitively Impaired Users',
+			'All of the above'
+		]}
+		correctAnswer="All of the above"
 		{isSubmitted}
 	/></Quiz
 >

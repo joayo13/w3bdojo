@@ -15,6 +15,9 @@ a {
 .tab-button {
 	animation: rainbow 2s forwards infinite;
 }
+.submit-button {
+	@apply rounded-md bg-neutral-900 px-4 py-2 text-neutral-200 dark:bg-neutral-200 dark:text-neutral-900;
+}
 @keyframes rainbow {
 	100%,
 	0% {
