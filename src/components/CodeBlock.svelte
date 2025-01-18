@@ -11,7 +11,7 @@
 	});
 </script>
 
-<pre>
+<pre class="mx-auto w-[95vw] md:w-[26rem] lg:w-[40rem] xl:w-full">
     <code class="language-{language} text-base">
       {@html code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}
     </code>

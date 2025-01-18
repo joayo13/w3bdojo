@@ -58,7 +58,7 @@
 			<a href="/lessons/lesson-1">Lesson 1: Keyboard Accessibility</a>
 		</li>
 		<li>
-			<a href="/lessons/lesson-2">Lesson 2: ARIA 101</a>
+			<a href="/lessons/lesson-2">Lesson 2: Skip Links and Tab-Index</a>
 		</li>
 		<li>
 			<a href="/lessons/lesson-3">Lesson 3: REMS</a>
@@ -106,7 +106,7 @@
 				<a href="/lessons/lesson-1">Lesson 1: Keyboard Accessibility</a>
 			</li>
 			<li>
-				<a href="/lessons/lesson-2">Lesson 2: ARIA 101</a>
+				<a href="/lessons/lesson-2">Lesson 2: Skip Links And Tab-Index</a>
 			</li>
 			<li>
 				<a href="/lessons/lesson-3">Lesson 3: REMS</a>
