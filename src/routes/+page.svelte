@@ -1,3 +1,7 @@
+<script>
+	import LessonLink from "../components/LessonLink.svelte";
+
+</script>
 <section class="max-w-3xl px-2">
 	<h1 class="text-4xl">Web Accessibility Interactive Tutorial</h1>
 	<h2 class="mt-8 text-2xl">Who is this tutorial for?</h2>
@@ -18,5 +22,5 @@
 			href="https://github.com/joayo13/wait/issues">Create a new issue</a
 		> and start helping today!
 	</p>
-	<a href="/lesson-1" class="mt-8 block text-2xl">Start Lesson 1</a>
+	<LessonLink href="/lessons/lesson-1" text="Start Lesson 1"/>
 </section>

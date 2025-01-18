@@ -1,5 +1,6 @@
 <script>
 	import CodeBlock from '../../../components/CodeBlock.svelte';
+	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
 	let isSubmitted = $state(false);
@@ -42,7 +43,7 @@
 	arrow keys. Navigate to “spongebob” and press Enter or Space key.
 </p>
 <select
-	class="mt-8 text-neutral-900"
+	class="mt-8 px-2 py-2 text-neutral-900 dark:text-neutral-200 border rounded-md dark:bg-neutral-900"
 	onchange={(e) => (e.currentTarget.value === 'Spongebob' ? alert("I'm ready!") : null)}
 >
 	<option>Shrek</option>
@@ -64,7 +65,7 @@
 	would now strip away the accessibility that came with the select element. How do we handle this?
 	That is where we use roles and attributes.
 </p>
-<div class="mx-auto w-[95vw] md:w-[26rem] lg:w-[40rem]">
+<div class="mx-auto w-[95vw] md:w-[26rem] lg:w-[40rem] xl:w-full">
 	<CodeBlock
 		language="html"
 		code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
@@ -98,7 +99,7 @@
 	<li>
 		<h4 class="text-green-600">aria-labelledby="select-label"</h4>
 		<p>
-			Associates the div with a label ("span" in this case) so screen readers announce what the
+			Associates the div with an element id ("span" in this case) so screen readers announce what the
 			dropdown represents. The label text is "Choose an option" in this example.
 		</p>
 	</li>
@@ -121,5 +122,29 @@
 		]}
 		correctAnswer="All of the above"
 		{isSubmitted}
-	/></Quiz
+	/>
+	<RadioGroup
+		name="What do you use to add accessibility to an element?"
+		options={[
+			'Roles and Attributes',
+			'Classes and Attributes',
+			'Roles and Alternatives',
+			'All of the above'
+		]}
+		correctAnswer="Roles and Attributes"
+		{isSubmitted}
+	/>
+	<RadioGroup
+		name="What does aria-labelledby do?"
+		options={[
+			'Associates an element to another with an id',
+			'Associates an element to another with a classname',
+			'Labels the aria',
+			'None of the above'
+		]}
+		correctAnswer="Associates an element to another with an id"
+		{isSubmitted}
+	/>
+	</Quiz
 >
+<LessonLink href="/lessons/lesson-2" text="Start Lesson 2"/>

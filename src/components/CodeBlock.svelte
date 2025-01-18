@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import hljs from 'highlight.js';
-	import 'highlight.js/styles/github-dark.css';
+	import 'highlight.js/styles/night-owl.css';
 
 	export let code = '<div>Hello World</div>';
 	export let language = 'html';
