@@ -1,6 +1,5 @@
 <script lang="ts">
-    let {text, href} = $props()
+	let { text, href } = $props();
 </script>
 
-
-<a href={href} class="mt-8 block text-2xl">{text}</a>
+<a {href} class="mt-8 block text-2xl">{text}</a>

@@ -4,7 +4,7 @@
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
 	let isSubmitted = $state(false);
-    const skipLinkCode = `
+	const skipLinkCode = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +48,7 @@
 </body>
 </html>
   `;
-  const tabIndexCode = `
+	const tabIndexCode = `
 <div class="game-over">
     <h1>Game Over</h1>
     <div class="links">
@@ -64,25 +64,36 @@
 
 <h1 class="text-4xl">Skip Links and Tab Index</h1>
 <p class="mt-8">
-	Imagine you can only use the keyboard, and you visit a news website, looking to see the main front page content. At the top of the page, there are links to home, about, articles, authors etc… This means you would have to tab through every link before being able to read what you wanted to in the first place. The solution to this problem is what’s known as a skip link. Try going to a content related website like reddit or wikipedia, and notice that when you use the tab key, you will get a button that shows up saying something along the lines of “skip to main content” that’s a skip link!
+	Imagine you can only use the keyboard, and you visit a news website, looking to see the main front
+	page content. At the top of the page, there are links to home, about, articles, authors etc… This
+	means you would have to tab through every link before being able to read what you wanted to in the
+	first place. The solution to this problem is what’s known as a skip link. Try going to a content
+	related website like reddit or wikipedia, and notice that when you use the tab key, you will get a
+	button that shows up saying something along the lines of “skip to main content” that’s a skip
+	link!
 </p>
-<h2 class="mt-8 text-2xl">So how can we implement our own? Let’s look at some basic HTML code: 
-</h2>
-<CodeBlock
-		language="html"
-		code={skipLinkCode}
-        />
+<h2 class="mt-8 text-2xl">So how can we implement our own? Let’s look at some basic HTML code:</h2>
+<CodeBlock language="html" code={skipLinkCode} />
 <p class="mt-2">
-	There’s a lot to take in here, but pay attention to the :focus selector in our styles, and our tabindex attribute on our main tag. The :focus selector is great for the skip link, because we can have it only visible in the case of someone tabbing/focusing into it. The reason that we use tabindex -1 is because without it, when we follow the link, our link would still be focused. By doing this, we are programmatically focusing the main content. Or more simply, forcing the focus onto main. This is one way that we can use the tabindex attribute to enhance our websites accessibility.
-
+	There’s a lot to take in here, but pay attention to the :focus selector in our styles, and our
+	tabindex attribute on our main tag. The :focus selector is great for the skip link, because we can
+	have it only visible in the case of someone tabbing/focusing into it. The reason that we use
+	tabindex -1 is because without it, when we follow the link, our link would still be focused. By
+	doing this, we are programmatically focusing the main content. Or more simply, forcing the focus
+	onto main. This is one way that we can use the tabindex attribute to enhance our websites
+	accessibility.
 </p>
-<p class="mt-2">Another less common scenario is when we want to override the natural flow of the tabbing through our website. Maybe we made a game, and at the gameover screen there are a bunch of links to things like scores, stats, items collected, enemies destroyed etc. but we want a keyboard user to immediately skip these and first tab onto the play again button. 
+<p class="mt-2">
+	Another less common scenario is when we want to override the natural flow of the tabbing through
+	our website. Maybe we made a game, and at the gameover screen there are a bunch of links to things
+	like scores, stats, items collected, enemies destroyed etc. but we want a keyboard user to
+	immediately skip these and first tab onto the play again button.
 </p>
-<CodeBlock
-		language="html"
-		code={tabIndexCode}
-        />
-<p class="mt-2">Here is how we could achieve something like this. Note that this is generally not recommended, as it could easily lead to confusion if overdone. But at least this example gives you an idea of how it works. In our next lesson, we’ll take a look at how ARIA works, and when we should use it.
+<CodeBlock language="html" code={tabIndexCode} />
+<p class="mt-2">
+	Here is how we could achieve something like this. Note that this is generally not recommended, as
+	it could easily lead to confusion if overdone. But at least this example gives you an idea of how
+	it works. In our next lesson, we’ll take a look at how ARIA works, and when we should use it.
 </p>
 <Quiz bind:isSubmitted
 	><RadioGroup
@@ -107,6 +118,5 @@
 		correctAnswer="All of the above"
 		{isSubmitted}
 	/>
-	</Quiz
->
-<LessonLink href="/lessons/lesson-3" text="Start Lesson 3"/>
+</Quiz>
+<LessonLink href="/lessons/lesson-3" text="Start Lesson 3" />

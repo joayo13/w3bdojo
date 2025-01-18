@@ -43,7 +43,7 @@
 	arrow keys. Navigate to “spongebob” and press Enter or Space key.
 </p>
 <select
-	class="mt-8 px-2 py-2 text-neutral-900 dark:text-neutral-200 border rounded-md dark:bg-neutral-900"
+	class="mt-8 rounded-md border px-2 py-2 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200"
 	onchange={(e) => (e.currentTarget.value === 'Spongebob' ? alert("I'm ready!") : null)}
 >
 	<option>Shrek</option>
@@ -66,12 +66,12 @@
 	That is where we use roles and attributes.
 </p>
 
-	<CodeBlock
-		language="html"
-		code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
+<CodeBlock
+	language="html"
+	code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
 	    <span id='select-label'>Choose an option</span>
 	  </div>"
-	/>
+/>
 
 <h3 class="mt-8 text-2xl">Explanation of the Attributes</h3>
 <ol class="mt-2 flex flex-col gap-2">
@@ -99,8 +99,8 @@
 	<li>
 		<h4 class="text-green-600">aria-labelledby="select-label"</h4>
 		<p>
-			Associates the div with an element id ("span" in this case) so screen readers announce what the
-			dropdown represents. The label text is "Choose an option" in this example.
+			Associates the div with an element id ("span" in this case) so screen readers announce what
+			the dropdown represents. The label text is "Choose an option" in this example.
 		</p>
 	</li>
 </ol>
@@ -145,6 +145,5 @@
 		correctAnswer="Associates an element to another with an id"
 		{isSubmitted}
 	/>
-	</Quiz
->
-<LessonLink href="/lessons/lesson-2" text="Start Lesson 2"/>
+</Quiz>
+<LessonLink href="/lessons/lesson-2" text="Start Lesson 2" />
