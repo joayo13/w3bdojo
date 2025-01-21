@@ -74,7 +74,7 @@
 </p>
 <h2 class="mt-8 text-2xl">So how can we implement our own? Let’s look at some basic HTML code:</h2>
 <CodeBlock language="html" code={skipLinkCode} />
-<p class="mt-2">
+<p>
 	There’s a lot to take in here, but pay attention to the :focus selector in our styles, and our
 	tabindex attribute on our main tag. The :focus selector is great for the skip link, because we can
 	have it only visible in the case of someone tabbing/focusing into it. The reason that we use
@@ -83,14 +83,14 @@
 	onto main. This is one way that we can use the tabindex attribute to enhance our websites
 	accessibility.
 </p>
-<p class="mt-2">
+<p class="my-2">
 	Another less common scenario is when we want to override the natural flow of the tabbing through
 	our website. Maybe we made a game, and at the gameover screen there are a bunch of links to things
 	like scores, stats, items collected, enemies destroyed etc. but we want a keyboard user to
 	immediately skip these and first tab onto the play again button.
 </p>
 <CodeBlock language="html" code={tabIndexCode} />
-<p class="mt-2">
+<p>
 	Here is how we could achieve something like this. Note that this is generally not recommended, as
 	it could easily lead to confusion if overdone. But at least this example gives you an idea of how
 	it works. In our next lesson, we’ll take a look at how ARIA works, and when we should use it.

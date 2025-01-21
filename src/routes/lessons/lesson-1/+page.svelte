@@ -73,7 +73,7 @@
 	  </div>"
 />
 
-<h3 class="mt-8 text-2xl">Explanation of the Attributes</h3>
+<h3 class="text-2xl">Explanation of the Attributes</h3>
 <ol class="mt-2 flex flex-col gap-2">
 	<li>
 		<h4 class="text-green-600">role ="select"</h4>

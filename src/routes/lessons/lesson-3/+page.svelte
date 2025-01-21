@@ -44,7 +44,7 @@
 
 </p>
 <CodeBlock language="html" code={codeSnippet} />
-<h2 class="mt-8 text-2xl">Aria Label</h2>
+<h2 class="text-2xl">Aria Label</h2>
 <p class="mt-2">
 	If you’ve ever had a window popup when on a website, you’ll have likely seen the common convention of a X button in the top corner of the popup, that will close the popup upon being clicked. For a screen reader, it wouldn’t be able to decipher what the image of an x would be. It would therefore have no meaning and just be some button. It would be useful if we could have a message for screen readers that will say that this button closes the window. This is where we’d use aria-label. This is nice and simple. Just add the aria-label attribute to your element and fill it in with text such as “Close Popup”. 
 </p>
