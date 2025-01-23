@@ -63,6 +63,9 @@
 		<li>
 			<a href="/lessons/lesson-3">Lesson 3: ARIA 101</a>
 		</li>
+		<li>
+			<a href="/lessons/lesson-4">Lesson 4: Testing Accessibility</a>
+		</li>
 		<div class="h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
 		<button
 			onclick={toggleDarkMode}
@@ -110,6 +113,9 @@
 			</li>
 			<li>
 				<a href="/lessons/lesson-3">Lesson 3: ARIA 101</a>
+			</li>
+			<li>
+				<a href="/lessons/lesson-4">Lesson 4: Testing Accessibility</a>
 			</li>
 			<div class="h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
 			<button

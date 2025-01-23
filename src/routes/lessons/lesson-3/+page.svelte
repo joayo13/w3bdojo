@@ -4,15 +4,15 @@
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
 	let isSubmitted = $state(false);
-    const jsCode = `document.getElementById('shopLink').addEventListener('mouseover', function() {
+	const jsCode = `document.getElementById('shopLink').addEventListener('mouseover', function() {
       const dropdown = document.getElementById('dropdown');
       const expanded = this.getAttribute('aria-expanded') === 'true';
       dropdown.style.display = expanded ? 'none' : 'block';
       this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   });`;
 
-  // The full HTML snippet
-  const codeSnippet = `<!DOCTYPE html>
+	// The full HTML snippet
+	const codeSnippet = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,17 +36,32 @@
 
 <h1 class="text-4xl">ARIA 101</h1>
 <p class="mt-8">
-	ARIA can be used to add extra accessibility information to tags. It’s how we would add accessibility to a plain div that is trying to emulate a select or other tag. So in general, you will mostly avoid ARIA unless you are trying to create custom versions of native elements. But, there are instances that ARIA can be used to enhance native HTML. Here, we’ll cover 3 Key ARIA Attributes: aria-controls, aria-expanded, and aria-label 
+	ARIA can be used to add extra accessibility information to tags. It’s how we would add
+	accessibility to a plain div that is trying to emulate a select or other tag. So in general, you
+	will mostly avoid ARIA unless you are trying to create custom versions of native elements. But,
+	there are instances that ARIA can be used to enhance native HTML. Here, we’ll cover 3 Key ARIA
+	Attributes: aria-controls, aria-expanded, and aria-label
 </p>
 <h2 class="mt-8 text-2xl">3a: Aria controls and aria-expanded</h2>
 <p class="mt-2">
-	Imagine that you are building a navigation for a shopping website, and when you hover over the shop link, you want a dropdown of some options to appear: t-shirts, pants, socks etc. Once you have built the dropdown menu, you need a way to communicate this relationship of link to dropdown to a screen reader. With aria-controls, we are saying to the screen reader “This link controls this element with this id” the element in this example being the dropdown menu. Aria-expanded says “if i am true then the dropdown is showing, if i am false then it is not”. Here is a code snippet that demonstrates this.
-
+	Imagine that you are building a navigation for a shopping website, and when you hover over the
+	shop link, you want a dropdown of some options to appear: t-shirts, pants, socks etc. Once you
+	have built the dropdown menu, you need a way to communicate this relationship of link to dropdown
+	to a screen reader. With aria-controls, we are saying to the screen reader “This link controls
+	this element with this id” the element in this example being the dropdown menu. Aria-expanded says
+	“if i am true then the dropdown is showing, if i am false then it is not”. Here is a code snippet
+	that demonstrates this.
 </p>
 <CodeBlock language="html" code={codeSnippet} />
 <h2 class="text-2xl">Aria Label</h2>
 <p class="mt-2">
-	If you’ve ever had a window popup when on a website, you’ll have likely seen the common convention of a X button in the top corner of the popup, that will close the popup upon being clicked. For a screen reader, it wouldn’t be able to decipher what the image of an x would be. It would therefore have no meaning and just be some button. It would be useful if we could have a message for screen readers that will say that this button closes the window. This is where we’d use aria-label. This is nice and simple. Just add the aria-label attribute to your element and fill it in with text such as “Close Popup”. 
+	If you’ve ever had a window popup when on a website, you’ll have likely seen the common convention
+	of a X button in the top corner of the popup, that will close the popup upon being clicked. For a
+	screen reader, it wouldn’t be able to decipher what the image of an x would be. It would therefore
+	have no meaning and just be some button. It would be useful if we could have a message for screen
+	readers that will say that this button closes the window. This is where we’d use aria-label. This
+	is nice and simple. Just add the aria-label attribute to your element and fill it in with text
+	such as “Close Popup”.
 </p>
 <Quiz bind:isSubmitted
 	><RadioGroup
@@ -71,7 +86,7 @@
 		correctAnswer="Indicates which element id this element is controlling"
 		{isSubmitted}
 	/>
-    <RadioGroup
+	<RadioGroup
 		name="What does aria-expanded do?"
 		options={[
 			'Controls my arias',
