@@ -36,7 +36,7 @@
 <nav
 	class="fixed z-10 flex h-16 w-full items-center justify-between bg-neutral-50 px-2 text-neutral-900 shadow-sm dark:bg-neutral-950 dark:text-neutral-200"
 >
-	<a href="/" class="text-xl font-bold no-underline">W.A.I.T</a>
+	<a href="/" class="text-xl font-bold no-underline">W.A.I.T v0.1.0</a>
 	<button
 		onclick={toggleMobileNavLinks}
 		class="flex h-10 w-10 flex-col justify-evenly md:hidden"
