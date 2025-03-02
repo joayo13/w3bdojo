@@ -33,6 +33,14 @@
 	}
 </script>
 
+<!-- Skip Link -->
+<a 
+	href="#main-content" 
+	class="sr-only focus:not-sr-only focus:absolute focus:left-0 focus:top-0 focus:z-50 focus:bg-neutral-200 focus:p-4 focus:text-neutral-900 dark:focus:bg-neutral-800 dark:focus:text-neutral-200"
+>
+	Skip to main content
+</a>
+
 <nav
 	class="fixed z-10 flex h-16 w-full items-center justify-between bg-neutral-50 px-2 text-neutral-900 shadow-sm dark:bg-neutral-950 dark:text-neutral-200"
 >
@@ -134,6 +142,7 @@
 <!-- /mobile nav links -->
 
 <div
+	id="main-content"
 	class="flex min-h-screen justify-center bg-neutral-100 pt-32 text-xl text-neutral-900 md:pl-80 dark:bg-neutral-900 dark:text-neutral-200"
 >
 	{@render children()}
