@@ -14,7 +14,7 @@
 	You might have heard the term “Lighthouse scores” in web development circles. What it means is a
 	score that gets assigned to a webpage measuring four categories. Performance, Accessibility, Best
 	Practices and SEO. Obviously we are only concerned with Accessibility. But keep in mind that you
-	should strive to have perfect or near perfect lighthouse scores.
+	should strive to have high lighthouse scores in general.
 </p>
 <h2 class="mt-8 text-2xl">How to get Lighthouse scores in Chrome</h2>
 <ol class="mt-2 flex flex-col gap-2">
