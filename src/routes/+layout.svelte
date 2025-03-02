@@ -34,8 +34,8 @@
 </script>
 
 <!-- Skip Link -->
-<a 
-	href="#main-content" 
+<a
+	href="#main-content"
 	class="sr-only focus:not-sr-only focus:absolute focus:left-0 focus:top-0 focus:z-50 focus:bg-neutral-200 focus:p-4 focus:text-neutral-900 dark:focus:bg-neutral-800 dark:focus:text-neutral-200"
 >
 	Skip to main content

@@ -88,20 +88,13 @@
 	/>
 	<RadioGroup
 		name="What are the recommended free screen readers?"
-		options={[
-			'NVIDIA and WAWS',
-			'NVDA and JAWS',
-			'WNBA and NBA',
-			'All of the above'
-		]}
+		options={['NVIDIA and WAWS', 'NVDA and JAWS', 'WNBA and NBA', 'All of the above']}
 		correctAnswer="NVDA and JAWS"
 		{isSubmitted}
 	/>
 	<RadioGroup
 		name="Why did you complete this tutorial?"
-		options={[
-			'Because I am awesome.',
-		]}
+		options={['Because I am awesome.']}
 		correctAnswer="Because I am awesome."
 		{isSubmitted}
 	/>
