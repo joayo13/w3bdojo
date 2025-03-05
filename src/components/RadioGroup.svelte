@@ -8,7 +8,7 @@
 </script>
 
 <fieldset
-	class="mt-12 flex flex-col gap-4 rounded-md border border-neutral-900 bg-neutral-300 p-4 dark:border-neutral-200 dark:bg-neutral-950"
+	class="mt-12 flex flex-col gap-4 rounded-md border border-slate-900 bg-slate-300 p-4 dark:border-slate-200 dark:bg-slate-950"
 >
 	<legend class="text-2xl font-bold">{name}</legend>
 	{#each options as option}
