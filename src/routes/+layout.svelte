@@ -3,6 +3,7 @@
 	import '../app.css';
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import GlobalNotifications from '$lib/components/GlobalNotifications.svelte';
 	let darkMode = $state(false);
 	let mobileNavLinksVisible = $state(false);
 	let { children } = $props();
@@ -144,6 +145,6 @@
 <div
 	id="main-content"
 	class="flex min-h-screen justify-center bg-slate-100 pt-32 text-xl text-neutral-900 md:pl-80 dark:bg-slate-900 dark:text-neutral-200"
->
+>   <GlobalNotifications/>
 	{@render children()}
 </div>

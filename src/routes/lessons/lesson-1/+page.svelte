@@ -1,4 +1,5 @@
 <script>
+	import { addNotification } from '$lib/stores/notifications';
 	import CodeBlock from '../../../components/CodeBlock.svelte';
 	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
@@ -23,7 +24,7 @@
 </p>
 <h2 class="mt-8 text-2xl">Here's a button:</h2>
 <button
-	onclick={() => alert('Yay!')}
+	onclick={() => addNotification("Hit me baby one more time! 🎉")}
 	class="tab-button my-8 rounded-sm border border-inherit px-4 py-2 text-2xl">Tab to me!</button
 >
 <p class="mt-2">
@@ -44,7 +45,7 @@
 </p>
 <select
 	class="mt-8 rounded-md border px-2 py-2 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200"
-	onchange={(e) => (e.currentTarget.value === 'Spongebob' ? alert("I'm ready!") : null)}
+	onclick={(e) => { e.currentTarget.value === 'Spongebob' ? addNotification("I'm ready, promotion! 🎉") : null}}
 >
 	<option>Shrek</option>
 	<option>Spiderman</option>
