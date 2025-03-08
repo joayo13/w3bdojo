@@ -7,7 +7,7 @@ type Notification = {
 
 const notifications = writable<Notification[]>([]);
 
-const addNotification = (message: string, duration = 3000) => {
+const addNotification = (message: string, duration = 4000) => {
 	const id = Date.now();
 
 	notifications.update((n) => [...n, { id, message }]);

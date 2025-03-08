@@ -15,18 +15,21 @@ We welcome contributions to improve the tutorial! Whether it's fixing bugs, addi
 
 2. **Clone your fork**
    Clone your fork to your local machine:
+
    ```bash
    git clone https://github.com/joayo13/W.A.I.T.git
    ```
 
 3. **Set up the development environment**
    Install the dependencies:
+
    ```bash
    npm install
    ```
 
 4. **Create a new branch**
    Create a new branch for your changes:
+
    ```bash
    git checkout -b your-branch-name
    ```
@@ -39,6 +42,7 @@ We welcome contributions to improve the tutorial! Whether it's fixing bugs, addi
 
 7. **Commit your changes**
    Add and commit your changes:
+
    ```bash
    git add .
    git commit -m "Describe your changes"
@@ -46,6 +50,7 @@ We welcome contributions to improve the tutorial! Whether it's fixing bugs, addi
 
 8. **Push your changes**
    Push your changes to your fork:
+
    ```bash
    git push origin your-branch-name
    ```

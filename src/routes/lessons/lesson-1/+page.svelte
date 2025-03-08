@@ -1,10 +1,20 @@
-<script>
+<script lang="ts">
 	import { addNotification } from '$lib/stores/notifications';
 	import CodeBlock from '../../../components/CodeBlock.svelte';
 	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
+	import Confetti from 'svelte-confetti';
 	let isSubmitted = $state(false);
+	let tabToMeConfetti = $state(false);
+	let selectMeConfetti = $state(false);
+	function handleSelectChange(e: Event) {
+		const value = (e.target as HTMLSelectElement).value;
+		if (value === 'Spongebob') {
+			addNotification("I'm ready, promotion! 🎉");
+			selectMeConfetti = true;
+		}
+	}
 </script>
 
 <h1 class="text-4xl">Keyboard Navigation and Semantic HTML</h1>
@@ -24,9 +34,16 @@
 </p>
 <h2 class="mt-8 text-2xl">Here's a button:</h2>
 <button
-	onclick={() => addNotification("Hit me baby one more time! 🎉")}
-	class="tab-button my-8 rounded-sm border border-inherit px-4 py-2 text-2xl">Tab to me!</button
->
+	onclick={() => {
+		addNotification('Hit me baby one more time! 🎉');
+		tabToMeConfetti = true;
+	}}
+	class="tab-button my-8 rounded-sm border border-inherit px-4 py-2 text-2xl"
+	>Tab to me!
+	{#if tabToMeConfetti}
+		<Confetti rounded={true} amount={100} fallDistance={'10rem'} x={[-2, 2]} />
+	{/if}
+</button>
 <p class="mt-2">
 	Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when
 	navigating to the button it will have a line around it to indicate that it is in a “focus” state.
@@ -45,12 +62,15 @@
 </p>
 <select
 	class="mt-8 rounded-md border px-2 py-2 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200"
-	onclick={(e) => { e.currentTarget.value === 'Spongebob' ? addNotification("I'm ready, promotion! 🎉") : null}}
+	onchange={handleSelectChange}
 >
 	<option>Shrek</option>
 	<option>Spiderman</option>
 	<option>Spongebob</option>
 </select>
+{#if selectMeConfetti}
+	<Confetti rounded={true} amount={100} fallDistance={'10rem'} x={[-2, 2]} />
+{/if}
 <p class="mt-8">
 	As you can see, these tags are already designed to handle keyboard navigation, which is very
 	convenient for us as developers. This leads us into an important realization: using the correct

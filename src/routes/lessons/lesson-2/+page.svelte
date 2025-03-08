@@ -68,9 +68,9 @@
 	page content. At the top of the page, there are links to home, about, articles, authors etc… This
 	means you would have to tab through every link before being able to read what you wanted to in the
 	first place. The solution to this problem is what’s known as a skip link. Try going to a content
-	related website like reddit or wikipedia, or even right here on W.A.I.T and notice that when you first use the tab key, you will get a
-	button that shows up saying something along the lines of “skip to main content” that’s a skip
-	link!
+	related website like reddit or wikipedia, or even right here on W.A.I.T and notice that when you
+	first use the tab key, you will get a button that shows up saying something along the lines of
+	“skip to main content” that’s a skip link!
 </p>
 <h2 class="mt-8 text-2xl">So how can we implement our own? Let’s look at some basic HTML code:</h2>
 <CodeBlock language="html" code={skipLinkCode} />
