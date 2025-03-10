@@ -22,7 +22,7 @@
 {#if isSubmitted}
 	<p>
 		{selectedOption
-			? `You selected: ${selectedOption} (${isCorrect() ? 'Correct' : 'Incorrect'})`
+			? `You selected: ${selectedOption} (${isCorrect() ? 'Correct' : `Incorrect, correct answer is ${correctAnswer}`})`
 			: 'No selection made'}
 	</p>
 {/if}
