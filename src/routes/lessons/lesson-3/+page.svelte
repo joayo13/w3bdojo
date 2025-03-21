@@ -63,7 +63,7 @@
 	is nice and simple. Just add the aria-label attribute to your element and fill it in with text
 	such as “Close Popup”.
 </p>
-<Quiz bind:isSubmitted
+<Quiz
 	><RadioGroup
 		name="When should you add an aria-label to something?"
 		options={[
@@ -73,7 +73,6 @@
 			'All of the above'
 		]}
 		correctAnswer="When it needs to swap places with another element"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="What does aria-controls do?"
@@ -84,7 +83,6 @@
 			'None of the above'
 		]}
 		correctAnswer="Indicates which element id this element is controlling"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="What does aria-expanded do?"
@@ -95,7 +93,6 @@
 			'All of the above'
 		]}
 		correctAnswer="Indicates whether an element is open or expanded"
-		{isSubmitted}
 	/>
 </Quiz>
 <LessonLink href="/lessons/lesson-4" text="Start Lesson 4" />

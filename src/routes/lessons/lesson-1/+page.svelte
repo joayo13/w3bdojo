@@ -5,7 +5,6 @@
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
 	import Confetti from 'svelte-confetti';
-	let isSubmitted = $state(false);
 	let tabToMeConfetti = $state(false);
 	let selectMeConfetti = $state(false);
 	function handleSelectChange(e: Event) {
@@ -132,7 +131,7 @@
 	headache. That’s not to say it isn’t useful to know these roles and attributes. In later lessons
 	we'll dive deeper into good use cases for these roles and attributes.
 </p>
-<Quiz bind:isSubmitted
+<Quiz
 	><RadioGroup
 		name="Who benefits from accessible web applications?"
 		options={[
@@ -142,7 +141,6 @@
 			'All of the above'
 		]}
 		correctAnswer="All of the above"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="What do you use to add accessibility to an element?"
@@ -153,7 +151,6 @@
 			'All of the above'
 		]}
 		correctAnswer="Roles and Attributes"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="What does aria-labelledby do?"
@@ -164,7 +161,6 @@
 			'None of the above'
 		]}
 		correctAnswer="Associates an element to another with an id"
-		{isSubmitted}
 	/>
 </Quiz>
 <LessonLink href="/lessons/lesson-2" text="Start Lesson 2" />

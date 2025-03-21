@@ -95,7 +95,7 @@
 	it could easily lead to confusion if overdone. But at least this example gives you an idea of how
 	it works. In our next lesson, we’ll take a look at how ARIA works, and when we should use it.
 </p>
-<Quiz bind:isSubmitted
+<Quiz
 	><RadioGroup
 		name="Why should we use a skip-link?"
 		options={[
@@ -105,7 +105,6 @@
 			'Keyboard users can skip to the bottom of the page'
 		]}
 		correctAnswer="Keyboard users can get to the main content faster"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="When should you set tabindex?"
@@ -116,7 +115,6 @@
 			'All of the above'
 		]}
 		correctAnswer="All of the above"
-		{isSubmitted}
 	/>
 </Quiz>
 <LessonLink href="/lessons/lesson-3" text="Start Lesson 3" />

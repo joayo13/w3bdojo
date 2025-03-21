@@ -74,7 +74,7 @@
 	and open source! We won’t cover installation steps and how to use them, as you can find that
 	information for your screen reader on their respective websites.
 </p>
-<Quiz bind:isSubmitted
+<Quiz
 	><RadioGroup
 		name="What is are the four categories measured by Lighthouse scores?"
 		options={[
@@ -84,19 +84,16 @@
 			'Performance, Accessibility, Best Practices and SEO'
 		]}
 		correctAnswer="Performance, Accessibility, Best Practices and SEO"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="What are the recommended free screen readers?"
 		options={['NVIDIA and WAWS', 'NVDA and JAWS', 'WNBA and NBA', 'All of the above']}
 		correctAnswer="NVDA and JAWS"
-		{isSubmitted}
 	/>
 	<RadioGroup
 		name="Why did you complete this tutorial?"
 		options={['Because I am awesome.']}
 		correctAnswer="Because I am awesome."
-		{isSubmitted}
 	/>
 </Quiz>
 <LessonLink href="/lessons/lesson-5" text="Start Lesson 5" />

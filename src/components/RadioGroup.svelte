@@ -1,10 +1,16 @@
 <script lang="ts">
+	import { getContext, onMount } from 'svelte';
+	import type { QuizContext } from '../types';
+
 	let { name, options, correctAnswer, isSubmitted } = $props();
 
 	let selectedOption: string | null = $state(null);
 
+	const { incrementCount, incrementCorrect } = getContext<QuizContext>('incrementCount');
 	// Function to check if the selected answer is correct
-	const isCorrect = () => selectedOption === correctAnswer;
+	onMount(() => {
+		incrementCount();
+	});
 </script>
 
 <fieldset
@@ -18,11 +24,3 @@
 		</label>
 	{/each}
 </fieldset>
-
-{#if isSubmitted}
-	<p>
-		{selectedOption
-			? `You selected: ${selectedOption} (${isCorrect() ? 'Correct' : `Incorrect, correct answer is ${correctAnswer}`})`
-			: 'No selection made'}
-	</p>
-{/if}
