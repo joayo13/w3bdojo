@@ -37,11 +37,13 @@
 		addNotification('Hit me baby one more time! 🎉');
 		tabToMeConfetti = true;
 	}}
-	class="tab-button my-8 rounded-sm border border-inherit px-4 py-2 text-2xl"
+	class="tab-button relative my-8 rounded-sm border border-inherit px-4 py-2 text-2xl"
 	>Tab to me!
-	{#if tabToMeConfetti}
-		<Confetti rounded={true} amount={100} fallDistance={'10rem'} x={[-2, 2]} />
-	{/if}
+	<div class="mx-auto w-10">
+		{#if tabToMeConfetti}
+			<Confetti rounded={true} amount={100} fallDistance={'10rem'} x={[-2, 2]} />
+		{/if}
+	</div>
 </button>
 <p class="mt-2">
 	Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when
@@ -59,17 +61,21 @@
 	tab as before followed by Enter or Space, but once selected, you can navigate the options with the
 	arrow keys. Navigate to “spongebob” and press Enter or Space key.
 </p>
-<select
-	class="mt-8 rounded-md border px-2 py-2 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200"
-	onchange={handleSelectChange}
->
-	<option>Shrek</option>
-	<option>Spiderman</option>
-	<option>Spongebob</option>
-</select>
-{#if selectMeConfetti}
-	<Confetti rounded={true} amount={100} fallDistance={'10rem'} x={[-2, 2]} />
-{/if}
+<div class="w-fit">
+	<select
+		class="mt-8 rounded-md border px-2 py-2 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200"
+		onchange={handleSelectChange}
+	>
+		<option>Shrek</option>
+		<option>Spiderman</option>
+		<option>Spongebob</option>
+	</select>
+	<div class="mx-auto w-10">
+		{#if selectMeConfetti}
+			<Confetti rounded={true} amount={100} fallDistance={'10rem'} x={[-2, 2]} />
+		{/if}
+	</div>
+</div>
 <p class="mt-8">
 	As you can see, these tags are already designed to handle keyboard navigation, which is very
 	convenient for us as developers. This leads us into an important realization: using the correct
