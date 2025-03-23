@@ -9,10 +9,10 @@
 	let selectedOption: string | null = $state(null);
 
 	const normalFieldsetStyle =
-		'mt-12 flex flex-col gap-4 rounded-md border border-slate-900 bg-slate-300 p-4 dark:border-slate-200 dark:bg-slate-950';
+		'mt-12 flex flex-col gap-4 rounded-lg border border-slate-900 bg-slate-300 py-4 px-6 dark:border-slate-200 dark:bg-slate-950';
 
 	const correctFieldsetStyle =
-		'mt-12 flex flex-col gap-4 rounded-md border border-slate-900 bg-green-300 p-4 dark:border-slate-200 dark:bg-green-600';
+		'mt-12 flex flex-col gap-4 rounded-lg border border-slate-900 bg-green-300 py-4 px-6 dark:border-slate-200 dark:bg-green-700';
 
 	const { incrementCount, incrementCorrect, decrementCorrect } =
 		getContext<QuizContext>('incrementCount');
