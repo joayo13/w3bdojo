@@ -115,16 +115,22 @@
 		<h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
 		<ul class="mt-8 flex flex-col gap-8 text-xl">
 			<li>
-				<a href="/lessons/lesson-1">Lesson 1: Keyboard Accessibility</a>
+				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-1"
+					>Lesson 1: Keyboard Accessibility</a
+				>
 			</li>
 			<li>
-				<a href="/lessons/lesson-2">Lesson 2: Skip Links And Tab-Index</a>
+				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-2"
+					>Lesson 2: Skip Links And Tab-Index</a
+				>
 			</li>
 			<li>
-				<a href="/lessons/lesson-3">Lesson 3: ARIA 101</a>
+				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-3">Lesson 3: ARIA 101</a>
 			</li>
 			<li>
-				<a href="/lessons/lesson-4">Lesson 4: Testing Accessibility</a>
+				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-4"
+					>Lesson 4: Testing Accessibility</a
+				>
 			</li>
 			<div class="h-px w-full bg-slate-900 dark:bg-slate-200"></div>
 			<button
