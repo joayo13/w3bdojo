@@ -12,6 +12,9 @@ h1 {
 	@apply tracking-tight
 }
 
+p {
+	@apply leading-relaxed
+}
 
 a {
 	@apply underline;
