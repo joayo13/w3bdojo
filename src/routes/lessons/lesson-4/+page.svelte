@@ -91,7 +91,7 @@
 		correctAnswer="NVDA and JAWS"
 	/>
 	<RadioGroup
-		name="Why did you complete this tutorial?"
+		name="Why am I learning how to make the web a more inclusive place?"
 		options={['Because I am awesome.']}
 		correctAnswer="Because I am awesome."
 	/>
