@@ -1,8 +1,8 @@
-# W.A.I.T. (Web Accessibility Interactive Tutorial)
+# W3b Dojo
 
 ## Overview
 
-W.A.I.T. is an interactive tutorial designed to teach the essentials of Web Accessibility, focusing on ARIA (Accessible Rich Internet Applications) principles. It includes sections on roles, states, properties, and focus management, offering a hands-on approach to learning accessibility practices.
+W3b Dojo is an interactive tutorial designed to teach the essentials of Web Accessibility, focusing on ARIA (Accessible Rich Internet Applications) principles. It includes sections on roles, states, properties, and focus management, offering a hands-on approach to learning accessibility practices.
 
 ## Contributing
 
