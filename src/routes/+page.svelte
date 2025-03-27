@@ -19,7 +19,7 @@
 	<p class="mt-2">
 		If you're looking to get some experience with open-source, here's a place to do it! Whether it
 		be suggestions for a new lesson or improvements to the structure of existing ones. <a
-			href="https://github.com/joayo13/wait/issues">Create a new issue</a
+			href="https://github.com/joayo13/w3bdojo/issues">Create a new issue</a
 		> and start helping today!
 	</p>
 	<LessonLink href="/lessons/lesson-1" text="Start Lesson 1" />
