@@ -61,9 +61,7 @@
 	let contrastResult: ContrastResult | null = calculateContrastRatio(color1, color2);
 </script>
 
-<div
-	class="mx-auto my-12 max-w-md space-y-6 rounded-xl bg-white p-6 text-slate-800 shadow-md dark:bg-slate-900 dark:text-slate-100"
->
+<div class="my-12 space-y-6 rounded-xl text-slate-800 dark:text-slate-100">
 	<div class="space-y-4">
 		<div class="flex items-center gap-4">
 			<input
@@ -96,50 +94,36 @@
 	</div>
 
 	{#if contrastResult}
-		<div class="space-y-3 rounded-md bg-slate-100 p-4 dark:bg-slate-800">
-			<h3 class="text-lg font-semibold">Contrast Ratio Results</h3>
-			<p class="text-3xl">Ratio: <span class="font-mono">{contrastResult.ratio}:1</span></p>
+		<div class="space-y-3 rounded-md bg-white p-4 dark:bg-slate-800">
+			<h3 class="text-3xl">Contrast Ratio Results</h3>
+			<p class="text-3xl font-bold">
+				Ratio: <span class="font-mono">{contrastResult.ratio}:1</span>
+			</p>
 
 			<div>
-				<h4 class="font-medium">WCAG Compliance</h4>
+				<h4 class="font-bold">WCAG Compliance</h4>
 				<ul class=" space-y-1">
 					<li>
 						Normal Text AA:
-						<span
-							class={contrastResult.passesAANormal
-								? 'font-bold text-green-600'
-								: 'font-bold text-red-600'}
-						>
+						<span class="font-bold">
 							{contrastResult.passesAANormal ? 'PASS' : 'FAIL'}
 						</span>
 					</li>
 					<li>
 						Normal Text AAA:
-						<span
-							class={contrastResult.passesAAANormal
-								? 'font-bold text-green-600'
-								: 'font-bold text-red-600'}
-						>
+						<span class="font-bold">
 							{contrastResult.passesAAANormal ? 'PASS' : 'FAIL'}
 						</span>
 					</li>
 					<li>
 						Large Text AA:
-						<span
-							class={contrastResult.passesAALarge
-								? 'font-bold text-green-600'
-								: 'font-bold text-red-600'}
-						>
+						<span class="font-bold">
 							{contrastResult.passesAALarge ? 'PASS' : 'FAIL'}
 						</span>
 					</li>
 					<li>
 						Large Text AAA:
-						<span
-							class={contrastResult.passesAAALarge
-								? 'font-bold text-green-600'
-								: 'font-bold text-red-600'}
-						>
+						<span class="font-bold">
 							{contrastResult.passesAAALarge ? 'PASS' : 'FAIL'}
 						</span>
 					</li>
