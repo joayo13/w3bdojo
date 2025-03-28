@@ -1,5 +1,6 @@
 <script>
 	import CodeBlock from '../../../components/CodeBlock.svelte';
+	import ContrastChecker from '../../../components/ContrastChecker.svelte';
 	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
@@ -51,8 +52,10 @@
 	create a contrast ratio. 21:1 being black on white. We won’t go over the math behind this but be
 	aware of this ratio, and use your browsers accessibility dev tools or
 	<a href="https://webaim.org/resources/contrastchecker/">Web aim's contrast checker</a> to make sure
-	all your elements respect this ratio.
+	all your elements respect this ratio. If you want you can even play with our very own contrast checker
+	below!
 </p>
+<ContrastChecker />
 <h2 class="mt-8 text-2xl">Legibility of Text</h2>
 <p class="mt-2">
 	The bulk of most websites is information conveyed through text. That is why when we choose a font,

@@ -1,5 +1,4 @@
 <script lang="ts">
-	// Interface for Contrast Result
 	interface ContrastResult {
 		ratio: string;
 		passesAANormal: boolean;
@@ -8,7 +7,6 @@
 		passesAAALarge: boolean;
 	}
 
-	// Function to calculate relative luminance
 	function getLuminance(r: number, g: number, b: number): number {
 		const a = [r, g, b].map((v) => {
 			v /= 255;
@@ -17,30 +15,23 @@
 		return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
 	}
 
-	// Function to convert hex to RGB
 	function hexToRgb(hex: string): [number, number, number] {
-		// Remove # if present
 		hex = hex.replace(/^#/, '');
-
-		// Handle 3-digit and 6-digit hex codes
 		const bigint = parseInt(
 			hex.length === 3
 				? hex
 						.split('')
-						.map((char) => char + char)
+						.map((c) => c + c)
 						.join('')
 				: hex,
 			16
 		);
-
 		const r = (bigint >> 16) & 255;
 		const g = (bigint >> 8) & 255;
 		const b = bigint & 255;
-
 		return [r, g, b];
 	}
 
-	// Calculate contrast ratio
 	function calculateContrastRatio(color1: string, color2: string): ContrastResult | null {
 		try {
 			const [r1, g1, b1] = hexToRgb(color1);
@@ -51,7 +42,6 @@
 
 			const lighter = Math.max(l1, l2);
 			const darker = Math.min(l1, l2);
-
 			const contrastRatio = (lighter + 0.05) / (darker + 0.05);
 
 			return {
@@ -67,139 +57,94 @@
 	}
 
 	let color1: string = '#000000';
-	let color2: string = '#FFFFFF';
+	let color2: string = '#ffffff';
 	let contrastResult: ContrastResult | null = calculateContrastRatio(color1, color2);
 </script>
 
-<div class="color-contrast-checker">
-	<h2>Color Contrast Ratio Checker</h2>
-
-	<div class="input-group">
-		<label>
-			Color 1:
+<div
+	class="mx-auto my-12 max-w-md space-y-6 rounded-xl bg-white p-6 text-slate-800 shadow-md dark:bg-slate-900 dark:text-slate-100"
+>
+	<div class="space-y-4">
+		<div class="flex items-center gap-4">
 			<input
 				type="color"
 				bind:value={color1}
+				class="h-12 w-12 rounded border"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 			<input
 				type="text"
 				bind:value={color1}
+				class="flex-1 rounded border p-2 dark:border-slate-700 dark:bg-slate-800"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
-		</label>
-
-		<label>
-			Color 2:
+		</div>
+		<div class="flex items-center gap-4">
 			<input
 				type="color"
 				bind:value={color2}
+				class="h-12 w-12 rounded border"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 			<input
 				type="text"
 				bind:value={color2}
+				class="flex-1 rounded border p-2 dark:border-slate-700 dark:bg-slate-800"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
-		</label>
+		</div>
 	</div>
 
 	{#if contrastResult}
-		<div class="results">
-			<h3>Contrast Ratio Results</h3>
-			<p>Ratio: {contrastResult.ratio}:1</p>
+		<div class="space-y-3 rounded-md bg-slate-100 p-4 dark:bg-slate-800">
+			<h3 class="text-lg font-semibold">Contrast Ratio Results</h3>
+			<p class="text-3xl">Ratio: <span class="font-mono">{contrastResult.ratio}:1</span></p>
 
-			<div class="compliance">
-				<h4>WCAG Compliance</h4>
-				<ul>
+			<div>
+				<h4 class="font-medium">WCAG Compliance</h4>
+				<ul class=" space-y-1">
 					<li>
 						Normal Text AA:
-						{#if contrastResult.passesAANormal}
-							<span class="pass">PASS</span>
-						{:else}
-							<span class="fail">FAIL</span>
-						{/if}
+						<span
+							class={contrastResult.passesAANormal
+								? 'font-bold text-green-600'
+								: 'font-bold text-red-600'}
+						>
+							{contrastResult.passesAANormal ? 'PASS' : 'FAIL'}
+						</span>
 					</li>
 					<li>
 						Normal Text AAA:
-						{#if contrastResult.passesAAANormal}
-							<span class="pass">PASS</span>
-						{:else}
-							<span class="fail">FAIL</span>
-						{/if}
+						<span
+							class={contrastResult.passesAAANormal
+								? 'font-bold text-green-600'
+								: 'font-bold text-red-600'}
+						>
+							{contrastResult.passesAAANormal ? 'PASS' : 'FAIL'}
+						</span>
 					</li>
 					<li>
 						Large Text AA:
-						{#if contrastResult.passesAALarge}
-							<span class="pass">PASS</span>
-						{:else}
-							<span class="fail">FAIL</span>
-						{/if}
+						<span
+							class={contrastResult.passesAALarge
+								? 'font-bold text-green-600'
+								: 'font-bold text-red-600'}
+						>
+							{contrastResult.passesAALarge ? 'PASS' : 'FAIL'}
+						</span>
 					</li>
 					<li>
 						Large Text AAA:
-						{#if contrastResult.passesAAALarge}
-							<span class="pass">PASS</span>
-						{:else}
-							<span class="fail">FAIL</span>
-						{/if}
+						<span
+							class={contrastResult.passesAAALarge
+								? 'font-bold text-green-600'
+								: 'font-bold text-red-600'}
+						>
+							{contrastResult.passesAAALarge ? 'PASS' : 'FAIL'}
+						</span>
 					</li>
 				</ul>
 			</div>
 		</div>
 	{/if}
 </div>
-
-<style>
-	.color-contrast-checker {
-		max-width: 400px;
-		margin: 0 auto;
-		padding: 20px;
-		font-family: Arial, sans-serif;
-	}
-
-	.input-group {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		margin-bottom: 20px;
-	}
-
-	label {
-		display: flex;
-		align-items: center;
-		gap: 10px;
-	}
-
-	input[type='color'] {
-		width: 50px;
-		height: 50px;
-		padding: 0;
-	}
-
-	input[type='text'] {
-		flex-grow: 1;
-		padding: 5px;
-	}
-
-	.results {
-		background-color: #f4f4f4;
-		padding: 15px;
-		border-radius: 5px;
-	}
-
-	.compliance ul {
-		list-style-type: none;
-		padding: 0;
-	}
-
-	.pass {
-		color: green;
-		font-weight: bold;
-	}
-
-	.fail {
-		color: red;
-		font-weight: bold;
-	}
-</style>
