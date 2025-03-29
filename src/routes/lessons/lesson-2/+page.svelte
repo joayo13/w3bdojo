@@ -14,7 +14,7 @@
     <style>
         /* Style to visually hide the link initially */
         .skip-link {
-            position: absolute;
+            position: fixed;
             top: -40px;
             left: 0;
             background: #007BFF;
@@ -75,13 +75,12 @@
 <h2 class="mt-8 text-2xl">So how can we implement our own? Let’s look at some basic HTML code:</h2>
 <CodeBlock language="html" code={skipLinkCode} />
 <p>
-	There’s a lot to take in here, but pay attention to the :focus selector in our styles, and our
-	tabindex attribute on our main tag. The :focus selector is great for the skip link, because we can
-	have it only visible in the case of someone tabbing/focusing into it. The reason that we use
-	tabindex -1 is because without it, when we follow the link, our link would still be focused. By
-	doing this, we are programmatically focusing the main content. Or more simply, forcing the focus
-	onto main. This is one way that we can use the tabindex attribute to enhance our websites
-	accessibility.
+	There’s a lot to take in here, but pay attention to the :focus selector in our styles, and our id
+	attribute on our main tag. The :focus selector is great for the skip link, because we can have it
+	only visible in the case of someone tabbing/focusing into it. The reason that we use tabindex -1
+	is because without it, when we follow the link, our link would still be focused. By doing this, we
+	are programmatically focusing the main content. Or more simply, forcing the focus onto main. This
+	is one way that we can use the tabindex attribute to enhance our websites accessibility.
 </p>
 <p class="my-2">
 	Another less common scenario is when we want to override the natural flow of the tabbing through
