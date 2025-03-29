@@ -37,7 +37,7 @@
 <!-- Skip Link -->
 <a
 	href="#main-content"
-	class="sr-only focus:not-sr-only focus:absolute focus:left-0 focus:top-0 focus:z-50 focus:bg-slate-200 focus:p-4 focus:text-slate-900 dark:focus:bg-slate-800 dark:focus:text-slate-200"
+	class="sr-only focus:not-sr-only focus:fixed focus:left-0 focus:top-0 focus:z-50 focus:bg-slate-200 focus:p-4 focus:text-slate-900 dark:focus:bg-slate-800 dark:focus:text-slate-200"
 >
 	Skip to main content
 </a>
