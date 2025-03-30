@@ -45,7 +45,7 @@
 <nav
 	class="fixed z-10 flex h-16 w-full items-center justify-between bg-slate-50 px-2 text-slate-900 shadow-sm dark:bg-slate-950 dark:text-slate-200"
 >
-	<a href="/" class="text-xl font-bold text-green-600 no-underline">W3b Dojo</a>
+	<a href="/" class="text-xl font-bold text-green-800 no-underline dark:text-green-500">W3b Dojo</a>
 	<button
 		onclick={toggleMobileNavLinks}
 		class="flex h-10 w-10 flex-col justify-evenly md:hidden"
