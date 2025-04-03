@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { notifications } from '$lib/stores/notifications';
-	import { flip } from 'svelte/animate';
 	import { fade } from 'svelte/transition';
 </script>
 
@@ -9,9 +8,8 @@
 >
 	{#each $notifications as message (message.id)}
 		<li
-			class="w-fit rounded-lg bg-green-600 p-3 text-neutral-200 shadow-lg"
-			transition:fade
-			animate:flip
+			class="w-fit rounded-lg bg-green-700 p-3 text-neutral-200 shadow-lg"
+			transition:fade={{ duration: 300 }}
 		>
 			{message.message}
 		</li>

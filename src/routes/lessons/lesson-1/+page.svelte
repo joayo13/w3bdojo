@@ -10,7 +10,7 @@
 	function handleSelectChange(e: Event) {
 		const value = (e.target as HTMLSelectElement).value;
 		if (value === 'Spongebob') {
-			addNotification("I'm ready, promotion! 🎉");
+			addNotification('You can select me! Spongebob would be proud. 🎉');
 			selectMeConfetti = true;
 		}
 	}
@@ -34,7 +34,7 @@
 <h2 class="mt-8 text-2xl">Here's a button:</h2>
 <button
 	onclick={() => {
-		addNotification('Hit me baby one more time! 🎉');
+		addNotification('You can tab to me! WOOHOO! 🎉');
 		tabToMeConfetti = true;
 	}}
 	class="tab-button relative my-8 rounded-sm border border-inherit px-4 py-2 text-2xl"
