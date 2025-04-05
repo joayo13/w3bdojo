@@ -67,13 +67,13 @@
 			<input
 				type="color"
 				bind:value={color1}
-				class="h-12 w-12 rounded border"
+				class="h-12 w-12 rounded border border-slate-900 dark:border-slate-200"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 			<input
 				type="text"
 				bind:value={color1}
-				class="flex-1 rounded border p-2 dark:border-slate-700 dark:bg-slate-800"
+				class="flex-1 rounded border border-slate-900 bg-slate-200 p-2 dark:border-slate-200 dark:bg-slate-800"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 		</div>
@@ -81,20 +81,22 @@
 			<input
 				type="color"
 				bind:value={color2}
-				class="h-12 w-12 rounded border"
+				class="h-12 w-12 rounded border border-slate-900 dark:border-slate-200"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 			<input
 				type="text"
 				bind:value={color2}
-				class="flex-1 rounded border p-2 dark:border-slate-700 dark:bg-slate-800"
+				class="flex-1 rounded border border-slate-900 bg-slate-200 p-2 dark:border-slate-200 dark:bg-slate-800"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 		</div>
 	</div>
 
 	{#if contrastResult}
-		<div class="space-y-3 rounded-md bg-white p-4 dark:bg-slate-800">
+		<div
+			class="space-y-3 rounded-md border border-slate-900 bg-slate-200 p-4 dark:border-slate-200 dark:bg-slate-800"
+		>
 			<h3 class="text-3xl">Contrast Ratio Results</h3>
 			<p class="text-3xl font-bold">
 				Ratio: <span class="font-mono">{contrastResult.ratio}:1</span>
