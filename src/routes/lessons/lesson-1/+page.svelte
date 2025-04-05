@@ -28,7 +28,7 @@
 	seen are tags such as "a"(otherwise known as anchor tags, these are what links are on a page),
 	"button", "select" etc. We will stick to these as they are simple examples, but take note that
 	there are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-		>many many more elements.</a
+		>many more elements.</a
 	> You can navigate through elements by using tab to move forwards, and shift + tab to move backwards.
 </p>
 <h2 class="mt-8 text-2xl">Here's a button:</h2>
@@ -102,28 +102,30 @@
 <h3 class="text-2xl">Explanation of the Attributes</h3>
 <ol class="mt-2 flex flex-col gap-2">
 	<li>
-		<h4 class="font-bold text-green-800 dark:text-green-500">role ="select"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">role ="select"</h4>
 		<p>Indicates that the element acts as a custom select dropdown.</p>
 	</li>
 	<li>
-		<h4 class="font-bold text-green-800 dark:text-green-500">aria-expanded="false"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">aria-expanded="false"</h4>
 		<p>
 			Specifies whether the dropdown is expanded (true) or collapsed (false). Update this
 			dynamically when the dropdown opens or closes.
 		</p>
 	</li>
 	<li>
-		<h4 class="font-bold text-green-800 dark:text-green-500">aria-haspopup="listbox"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">aria-haspopup="listbox"</h4>
 		<p>Indicates that the dropdown will display a listbox (typically the dropdown options).</p>
 	</li>
 	<li>
-		<h4 class="font-bold text-green-800 dark:text-green-500">tabindex="0"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">tabindex="0"</h4>
 		<p>
 			Makes the div focusable via keyboard navigation. Users can navigate to it with the Tab key.
 		</p>
 	</li>
 	<li>
-		<h4 class="font-bold text-green-800 dark:text-green-500">aria-labelledby="select-label"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">
+			aria-labelledby="select-label"
+		</h4>
 		<p>
 			Associates the div with an element id ("span" in this case) so screen readers announce what
 			the dropdown represents. The label text is "Choose an option" in this example.
