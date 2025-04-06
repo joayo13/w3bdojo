@@ -1,5 +1,5 @@
 ---
-name: ♿ Accessibility Improvement
+name: ❤️ Accessibility Improvement
 about: Suggest improvements related to accessibility
 title: "[Accessibility] "
 labels: accessibility
