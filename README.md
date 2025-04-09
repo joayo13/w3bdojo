@@ -17,7 +17,7 @@ We welcome contributions to improve the tutorial! Whether it's fixing bugs, addi
    Clone your fork to your local machine:
 
    ```bash
-   git clone https://github.com/joayo13/W.A.I.T.git
+   git clone https://github.com/joayo13/w3bdojo.git
    ```
 
 3. **Set up the development environment**
