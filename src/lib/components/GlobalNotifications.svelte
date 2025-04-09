@@ -8,7 +8,7 @@
 >
 	{#each $notifications as message (message.id)}
 		<li
-			class="w-fit rounded-lg bg-green-900 p-3 text-neutral-50 shadow-lg"
+			class="w-fit rounded-lg border border-slate-900 bg-slate-200 p-3 dark:border-slate-200 dark:bg-slate-800"
 			transition:fade={{ duration: 300 }}
 		>
 			{message.message}
