@@ -65,12 +65,14 @@
 	<div class="space-y-4">
 		<div class="flex items-center gap-4">
 			<input
+				aria-label="Select color 1"
 				type="color"
 				bind:value={color1}
 				class="h-12 w-12 rounded border border-slate-900 dark:border-slate-200"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 			<input
+				aria-label="Enter color 1"
 				type="text"
 				bind:value={color1}
 				class="flex-1 rounded border border-slate-900 bg-slate-200 p-2 dark:border-slate-200 dark:bg-slate-800"
@@ -79,12 +81,14 @@
 		</div>
 		<div class="flex items-center gap-4">
 			<input
+				aria-label="Select color 2"
 				type="color"
 				bind:value={color2}
 				class="h-12 w-12 rounded border border-slate-900 dark:border-slate-200"
 				on:input={() => (contrastResult = calculateContrastRatio(color1, color2))}
 			/>
 			<input
+				aria-label="Enter color 2"
 				type="text"
 				bind:value={color2}
 				class="flex-1 rounded border border-slate-900 bg-slate-200 p-2 dark:border-slate-200 dark:bg-slate-800"
@@ -97,13 +101,11 @@
 		<div
 			class="space-y-3 rounded-md border border-slate-900 bg-slate-200 p-4 dark:border-slate-200 dark:bg-slate-800"
 		>
-			<h3 class="text-3xl">Contrast Ratio Results</h3>
-			<p class="text-3xl font-bold">
-				Ratio: <span class="font-mono">{contrastResult.ratio}:1</span>
+			<p class="text-2xl">
+				Ratio: {contrastResult.ratio}:1
 			</p>
 
 			<div>
-				<h4 class="font-bold">WCAG Compliance</h4>
 				<ul class=" space-y-1">
 					<li>
 						Normal Text AA:

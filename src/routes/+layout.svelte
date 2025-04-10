@@ -78,17 +78,19 @@
 		<li>
 			<a href="/lessons/lesson-5">Visual Accessibility</a>
 		</li>
-		<div class="h-px w-full bg-slate-900 dark:bg-slate-200"></div>
-		<button
-			onclick={toggleDarkMode}
-			aria-label="Toggle dark mode"
-			aria-pressed={darkMode}
-			class="relative ml-auto h-8 w-16 rounded-full border border-slate-900 dark:border-slate-200"
-		>
-			<div
-				class="absolute right-0 top-1/2 size-8 -translate-y-1/2 bg-moon-svg dark:left-0 dark:bg-sun-svg"
-			></div>
-		</button>
+		<li>
+			<div aria-hidden="true" class="h-px w-full bg-slate-900 dark:bg-slate-200"></div>
+			<button
+				onclick={toggleDarkMode}
+				aria-label="Toggle dark mode"
+				aria-pressed={darkMode}
+				class="relative ml-auto mt-8 h-8 w-16 rounded-full border border-slate-900 dark:border-slate-200"
+			>
+				<div
+					class="absolute right-0 top-1/2 size-8 -translate-y-1/2 bg-moon-svg dark:left-0 dark:bg-sun-svg"
+				></div>
+			</button>
+		</li>
 	</ul>
 </nav>
 <!-- /desktop nav links -->

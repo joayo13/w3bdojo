@@ -75,6 +75,7 @@
 </p>
 <div class="w-fit">
 	<select
+		aria-label="Select an option"
 		class="mt-8 rounded-md border border-slate-900 bg-slate-200 px-2 py-2 text-slate-900 dark:border-slate-200 dark:bg-slate-800 dark:text-slate-100"
 		onchange={handleSelectChange}
 	>

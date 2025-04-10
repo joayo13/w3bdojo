@@ -52,10 +52,10 @@
 </p>
 <ol class="mt-8 flex flex-col gap-2">
 	<li>
-		<h4 class="font-bold">Normal body text: 4.5:1</h4>
+		<p class="font-bold">Normal body text: 4.5:1</p>
 	</li>
 	<li>
-		<h4 class="font-bold">Other elements and larger text: 3:1</h4>
+		<p class="font-bold">Other elements and larger text: 3:1</p>
 	</li>
 </ol>
 <p class="mt-8">You are right to ask: what do those numbers mean?</p>
@@ -65,7 +65,7 @@
 	aware of this ratio, and use your browsers accessibility dev tools or
 	<a href="https://webaim.org/resources/contrastchecker/">Web aim's contrast checker</a> to make sure
 	all your elements respect this ratio. If you want you can even play with our very own contrast checker
-	below!
+	below! AA is standard for WCAG compliance. AAA is the highest level of compliance.
 </p>
 <ContrastChecker />
 <h2 class="mt-8 text-2xl">Legibility of Text</h2>
