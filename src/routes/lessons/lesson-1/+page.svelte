@@ -16,6 +16,18 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Lesson 1: Keyboard Navigation and Semantic HTML | W3b Dojo</title>
+	<meta
+		name="description"
+		content="Learn about keyboard navigation and semantic HTML for web accessibility. Understand how to make your websites accessible to users who rely on keyboard navigation."
+	/>
+	<meta
+		name="keywords"
+		content="keyboard navigation, semantic HTML, web accessibility, a11y, focus management"
+	/>
+</svelte:head>
+
 <h1 class="text-4xl">Keyboard Navigation and Semantic HTML</h1>
 <p class="mt-8">
 	As you know, there are plenty of folks in the world that cannot use both hands. Or maybe some

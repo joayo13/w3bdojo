@@ -62,20 +62,32 @@
   `;
 </script>
 
+<svelte:head>
+	<title>Lesson 2: Skip Links and Focus Management | W3b Dojo</title>
+	<meta
+		name="description"
+		content="Learn about skip links and focus management techniques for web accessibility. Understand how to help keyboard users navigate your website more efficiently."
+	/>
+	<meta
+		name="keywords"
+		content="skip links, focus management, web accessibility, a11y, keyboard navigation"
+	/>
+</svelte:head>
+
 <h1 class="text-4xl">Skip Links and Tab Index</h1>
 <p class="mt-8">
 	Imagine you can only use the keyboard, and you visit a news website, looking to see the main front
 	page content. At the top of the page, there are links to home, about, articles, authors etc… This
 	means you would have to tab through every link before being able to read what you wanted to in the
-	first place. The solution to this problem is what’s known as a skip link. Try going to a content
+	first place. The solution to this problem is what's known as a skip link. Try going to a content
 	related website like reddit or wikipedia, or even right here on W3b Dojo and notice that when you
 	first use the tab key, you will get a button that shows up saying something along the lines of
-	“skip to main content” that’s a skip link!
+	"skip to main content" that's a skip link!
 </p>
-<h2 class="mt-8 text-2xl">So how can we implement our own? Let’s look at some basic HTML code:</h2>
+<h2 class="mt-8 text-2xl">So how can we implement our own? Let's look at some basic HTML code:</h2>
 <CodeBlock language="html" code={skipLinkCode} />
 <p>
-	There’s a lot to take in here, but pay attention to the :focus selector in our styles, and our id
+	There's a lot to take in here, but pay attention to the :focus selector in our styles, and our id
 	attribute on our main tag. The :focus selector is great for the skip link, because we can have it
 	only visible in the case of someone tabbing/focusing into it. The reason that we use tabindex -1
 	is because without it, when we follow the link, our link would still be focused. By doing this, we
@@ -92,7 +104,7 @@
 <p>
 	Here is how we could achieve something like this. Note that this is generally not recommended, as
 	it could easily lead to confusion if overdone. But at least this example gives you an idea of how
-	it works. In our next lesson, we’ll take a look at how ARIA works, and when we should use it.
+	it works. In our next lesson, we'll take a look at how ARIA works, and when we should use it.
 </p>
 <Quiz
 	><RadioGroup

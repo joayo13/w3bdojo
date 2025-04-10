@@ -2,6 +2,18 @@
 	import LessonLink from '../components/LessonLink.svelte';
 </script>
 
+<svelte:head>
+	<title>W3b Dojo - Web Accessibility Tutorials</title>
+	<meta
+		name="description"
+		content="Comprehensive web accessibility tutorials for beginners and intermediate developers. Learn about keyboard navigation, semantic HTML, ARIA, and more."
+	/>
+	<meta
+		name="keywords"
+		content="web accessibility, a11y, tutorials, keyboard navigation, semantic HTML, ARIA"
+	/>
+</svelte:head>
+
 <section class="max-w-3xl px-2">
 	<h1 class="text-4xl">Welcome to W3b Dojo!</h1>
 	<h2 class="mt-8 text-2xl">What is it?</h2>
@@ -12,7 +24,7 @@
 	<h2 class="mt-8 text-2xl">How does it work?</h2>
 	<p class="mt-2">
 		Each lesson will be composed of a brief reading section, code examples, and at the end a quiz /
-		fill in the blank section. You can choose lessons in any order, as they don’t build on one
+		fill in the blank section. You can choose lessons in any order, as they don't build on one
 		another.
 	</p>
 	<h2 class="mt-8 text-2xl">Contributing</h2>

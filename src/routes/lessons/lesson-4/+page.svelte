@@ -5,13 +5,25 @@
 	let isSubmitted = $state(false);
 </script>
 
+<svelte:head>
+	<title>Lesson 4: Testing Web Accessibility | W3b Dojo</title>
+	<meta
+		name="description"
+		content="Learn how to test your website for accessibility using tools like Lighthouse and screen readers. Understand how to identify and fix accessibility issues."
+	/>
+	<meta
+		name="keywords"
+		content="accessibility testing, Lighthouse, screen readers, web accessibility, a11y"
+	/>
+</svelte:head>
+
 <h1 class="text-4xl">Testing Accessibility</h1>
 <p class="mt-8">
-	This section of the tutorial assumes you are using the Chrome or Firefox Browser. (If you aren’t
+	This section of the tutorial assumes you are using the Chrome or Firefox Browser. (If you aren't
 	you should, as this is the standard for web development)
 </p>
 <p class="mt-2">
-	You might have heard the term “Lighthouse scores” in web development circles. What it means is a
+	You might have heard the term "Lighthouse scores" in web development circles. What it means is a
 	score that gets assigned to a webpage measuring four categories. Performance, Accessibility, Best
 	Practices and SEO. Obviously we are only concerned with Accessibility. But keep in mind that you
 	should strive to have high lighthouse scores in general.
@@ -70,8 +82,8 @@
 <p class="mt-8">
 	Great, now that will be a tool you can take with you and make great use of in the future. Another
 	great tool to have is a screen reader, so you can personally test how a screen reader will behave
-	on your website. The two screen readers we’ll recommend are NVDA and JAWS, both of which are free
-	and open source! We won’t cover installation steps and how to use them, as you can find that
+	on your website. The two screen readers we'll recommend are NVDA and JAWS, both of which are free
+	and open source! We won't cover installation steps and how to use them, as you can find that
 	information for your screen reader on their respective websites.
 </p>
 <Quiz
