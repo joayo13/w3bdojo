@@ -28,7 +28,7 @@
 	/>
 </svelte:head>
 
-<h1 class="text-4xl">Keyboard Navigation and Semantic HTML</h1>
+<h1 class="text-4xl font-semibold">Keyboard Navigation and Semantic HTML</h1>
 <p class="mt-8">
 	As you know, there are plenty of folks in the world that cannot use both hands. Or maybe some
 	can't see the mouse on the screen due to visual impairment. Whatever the case, accommodating these

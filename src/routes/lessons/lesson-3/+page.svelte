@@ -46,7 +46,7 @@
 	/>
 </svelte:head>
 
-<h1 class="text-4xl">ARIA 101</h1>
+<h1 class="text-4xl font-semibold">ARIA 101</h1>
 <p class="mt-8">
 	ARIA can be used to add extra accessibility information to tags. It's how we would add
 	accessibility to a plain div that is trying to emulate a select or other tag. So in general, you
@@ -54,7 +54,7 @@
 	there are instances that ARIA can be used to enhance native HTML. Here, we'll cover 3 Key ARIA
 	Attributes: aria-controls, aria-expanded, and aria-label
 </p>
-<h2 class="mt-8 text-2xl">3a: Aria controls and aria-expanded</h2>
+<h2 class="mt-8 text-3xl">3a: Aria controls and aria-expanded</h2>
 <p class="mt-2">
 	Imagine that you are building a navigation for a shopping website, and when you hover over the
 	shop link, you want a dropdown of some options to appear: t-shirts, pants, socks etc. Once you
@@ -65,7 +65,7 @@
 	that demonstrates this.
 </p>
 <CodeBlock language="html" code={codeSnippet} />
-<h2 class="text-2xl">Aria Label</h2>
+<h2 class="text-3xl">Aria Label</h2>
 <p class="mt-2">
 	If you've ever had a window popup when on a website, you'll have likely seen the common convention
 	of a X button in the top corner of the popup, that will close the popup upon being clicked. For a

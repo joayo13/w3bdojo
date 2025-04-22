@@ -15,7 +15,7 @@
 </svelte:head>
 
 <section class="max-w-3xl px-2">
-	<h1 class="text-4xl">Welcome to W3b Dojo!</h1>
+	<h1 class="text-4xl font-semibold">Welcome to W3b Dojo!</h1>
 	<h2 class="mt-8 text-2xl">What is it?</h2>
 	<p class="mt-2">
 		This is a set of tutorials meant for both total beginners, and intermediate developers. It is

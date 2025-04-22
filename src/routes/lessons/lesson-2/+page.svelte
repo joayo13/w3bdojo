@@ -74,7 +74,7 @@
 	/>
 </svelte:head>
 
-<h1 class="text-4xl">Skip Links and Tab Index</h1>
+<h1 class="text-4xl font-semibold">Skip Links and Tab Index</h1>
 <p class="mt-8">
 	Imagine you can only use the keyboard, and you visit a news website, looking to see the main front
 	page content. At the top of the page, there are links to home, about, articles, authors etc… This
@@ -84,7 +84,7 @@
 	first use the tab key, you will get a button that shows up saying something along the lines of
 	"skip to main content" that's a skip link!
 </p>
-<h2 class="mt-8 text-2xl">So how can we implement our own? Let's look at some basic HTML code:</h2>
+<h2 class="mt-8 text-3xl">So how can we implement our own? Let's look at some basic HTML code:</h2>
 <CodeBlock language="html" code={skipLinkCode} />
 <p>
 	There's a lot to take in here, but pay attention to the :focus selector in our styles, and our id
