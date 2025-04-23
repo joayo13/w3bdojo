@@ -10,7 +10,7 @@
 	function handleSelectChange(e: Event) {
 		const value = (e.target as HTMLSelectElement).value;
 		if (value === 'Spongebob') {
-			addNotification('You can select me! Spongebob would be proud. 🎉');
+			addNotification('🔥 Selectacular 🔥');
 			selectMeConfetti = true;
 		}
 	}
@@ -30,23 +30,30 @@
 
 <h1 class="text-4xl font-semibold">Keyboard Navigation and Semantic HTML</h1>
 <p class="mt-8">
-	As you know, there are plenty of folks in the world that cannot use both hands. Or maybe some
-	can't see the mouse on the screen due to visual impairment. Whatever the case, accommodating these
-	users is an absolute necessity. So make sure to pay close attention here.
+	Getting keyboard navigation right not only assists people with motor and visual disabilities, but
+	also power-users! It's a must have on any website and this lesson will introduce you to how you
+	can use your keyboard to navigate, and the native HTML elements we can use with keyboard support
+	built in.
 </p>
 <h2 class="mt-8 text-2xl">1a: How does keyboard navigation work?</h2>
 <p class="mt-2">
-	As you likely already know there are many types of elements or "tags" within HTML. Most commonly
-	seen are tags such as "a"(otherwise known as anchor tags, these are what links are on a page),
-	"button", "select" etc. We will stick to these as they are simple examples, but take note that
-	there are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-		>many more elements.</a
-	> You can navigate through elements by using tab to move forwards, and shift + tab to move backwards.
+	There are many types of elements or "tags" within HTML. Most commonly seen are tags such as
+	"a"(otherwise known as anchor tags, these are what links are on a page), "button", "select" etc.
+	We will stick to these as they are simple examples. If you didn't already know, you can navigate
+	through elements by using tab to move forwards, and shift + tab to move backwards.
 </p>
-<h2 class="mt-8 text-2xl">Here's a button:</h2>
+<p class="mt-2">
+	Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when
+	navigating to the button below it will have a white line around it to indicate that it is in a
+	"focus" state.
+</p>
+<p class="mt-2">
+	Pressing the "Enter" or "Space" key will trigger the associated action on the element. Try doing
+	that to the button.
+</p>
 <button
 	onclick={() => {
-		addNotification('You can tab to me! WOOHOO! 🎉');
+		addNotification('Fantabstic! 🎉');
 		tabToMeConfetti = true;
 	}}
 	class="tab-button relative my-8 rounded-sm border border-inherit px-4 py-2 text-2xl"
@@ -57,26 +64,15 @@
 		{/if}
 	</div>
 </button>
-<p class="mt-2">
-	Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when
-	navigating to the button it will have a line around it to indicate that it is in a "focus" state.
-	This is meant to be very noticeable by default. Which is great since it'll be easy to see for our
-	visually impaired users.
-</p>
-<p class=" mt-8">
-	Pressing the "Enter" or "Space" key will trigger the associated action on the element. Try doing
-	that to the button.
-</p>
-<h2 class="mt-8 text-2xl">Select an option:</h2>
-<p class="mt-8">
-	Let's interact with the "select" tag that has a few corresponding "option"s. Use tab or shift +
-	tab as before followed by Enter or Space, but once selected, you can navigate the options with the
-	arrow keys. Navigate to "Spongebob" and press Enter or Space key.
+<p>
+	Now Let's interact with the "select" tag that has a few corresponding "option"s. Use tab or shift
+	+ tab as before followed by Enter or Space, but once selected, you can navigate the options with
+	the arrow keys. Navigate to "Spongebob" and press Enter or Space key.
 </p>
 <div class="w-fit">
 	<select
 		aria-label="Select an option"
-		class="mt-8 rounded-md border border-slate-900 bg-slate-200 px-2 py-2 text-slate-900 dark:border-slate-200 dark:bg-slate-800 dark:text-slate-100"
+		class="my-8 rounded-md border border-slate-900 bg-slate-200 px-2 py-2 text-slate-900 dark:border-slate-200 dark:bg-slate-800 dark:text-slate-100"
 		onchange={handleSelectChange}
 	>
 		<option>Shrek</option>
@@ -89,7 +85,7 @@
 		{/if}
 	</div>
 </div>
-<p class="mt-8">
+<p>
 	As you can see, these tags are already designed to handle keyboard navigation, which is very
 	convenient for us as developers. This leads us into an important realization: using the correct
 	HTML tags for the job will make a web application accessible by default.
@@ -148,9 +144,8 @@
 <p class="mt-8">
 	That was exhausting.. All of this just to emulate what was already there in the select tag. And we
 	haven't even added support for using the up and down arrow keys on the options. Now you can see
-	why it is best to avoid custom implementations like this as much as possible, to save yourself the
-	headache. That's not to say it isn't useful to know these roles and attributes. In later lessons
-	we'll dive deeper into good use cases for these roles and attributes.
+	why it is best to avoid custom implementations like this as much as possible. Just remember,
+	native HTML elements are accessible by default!
 </p>
 <Quiz
 	><RadioGroup
