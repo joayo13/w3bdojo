@@ -61,8 +61,8 @@
 	aria-labelledby="lessons-header"
 	class="fixed hidden h-screen w-80 flex-col bg-slate-200 px-4 pt-16 text-right text-slate-900 md:flex dark:bg-slate-800 dark:text-slate-200"
 >
-	<h2 class="mt-14 text-2xl" id="lessons-header">Accessibility Lessons</h2>
-	<ul class="relative mt-8 flex flex-col gap-8 text-xl">
+	<h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
+	<ul class="relative mt-8 flex flex-col gap-8">
 		<li>
 			<a href="/lessons/lesson-1">Keyboard Accessibility</a>
 		</li>
