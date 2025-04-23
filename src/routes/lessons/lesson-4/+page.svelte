@@ -28,7 +28,7 @@
 	Practices and SEO. Obviously we are only concerned with Accessibility. But keep in mind that you
 	should strive to have high lighthouse scores in general.
 </p>
-<h2 class="mt-8 text-3xl">How to get Lighthouse scores in Chrome</h2>
+<h2 class="mt-8 text-2xl">How to get Lighthouse scores in Chrome</h2>
 <ol class="mt-2 flex flex-col gap-2">
 	<li>
 		<h4>1. Open Chrome and navigate to the website you want to test.</h4>
@@ -58,7 +58,7 @@
 	</li>
 </ol>
 <div class="mt-8 h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
-<h2 class="mt-8 text-3xl">How to get Lighthouse scores in Firefox</h2>
+<h2 class="mt-8 text-2xl">How to get Lighthouse scores in Firefox</h2>
 <ol class="mt-2 flex flex-col gap-2">
 	<li>
 		<h4>1. Install the Lighthouse extension from the Chrome Web Store (works in Firefox).</h4>
