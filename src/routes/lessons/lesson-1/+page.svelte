@@ -43,8 +43,8 @@
 </p>
 <p class="mt-2">
 	Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when
-	navigating to the button below it will have a white line around it. That line indicates that it is
-	in a "focus" state.
+	navigating to the button below it will receive a border around it. That border indicates that it
+	is in a "focus" state.
 </p>
 <p class="mt-2">
 	Pressing the "Enter" or "Space" key on the button is the equivalent of clicking it. Try doing that
@@ -65,8 +65,8 @@
 </button>
 <p>
 	Now let's interact with the select element. Use tab or shift + tab as before to focus it. but once
-	focused, you can navigate its options with the arrow keys. Navigate to "Spongebob" and press Enter
-	or Space key.
+	focused, you can navigate its options with the arrow keys. Navigate to "Spongebob" and press the
+	Enter or Space key.
 </p>
 <div class="w-fit">
 	<select
