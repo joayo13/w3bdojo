@@ -32,24 +32,23 @@
 <p class="mt-8">
 	Getting keyboard navigation right not only assists people with motor and visual disabilities, but
 	also power-users! It's a must have on any website and this lesson will introduce you to how you
-	can use your keyboard to navigate, and the native HTML elements we can use with keyboard support
-	built in.
+	can use your keyboard to navigate, and the HTML elements we can use with keyboard support built
+	in.
 </p>
 <h2 class="mt-8 text-2xl">1a: How does keyboard navigation work?</h2>
 <p class="mt-2">
-	There are many types of elements or "tags" within HTML. Most commonly seen are tags such as
-	"a"(otherwise known as anchor tags, these are what links are on a page), "button", "select" etc.
-	We will stick to these as they are simple examples. If you didn't already know, you can navigate
-	through elements by using tab to move forwards, and shift + tab to move backwards.
+	There are many elements within HTML. Most commonly seen are elements such as "a"(a is for anchor,
+	AKA links), "button", "select" etc. These are just some of the elements which support keyboard
+	interactions.
 </p>
 <p class="mt-2">
 	Notice how if you press your tab key to navigate forward or shift+tab to navigate backward, when
-	navigating to the button below it will have a white line around it to indicate that it is in a
-	"focus" state.
+	navigating to the button below it will have a white line around it. That line indicates that it is
+	in a "focus" state.
 </p>
 <p class="mt-2">
-	Pressing the "Enter" or "Space" key will trigger the associated action on the element. Try doing
-	that to the button.
+	Pressing the "Enter" or "Space" key on the button is the equivalent of clicking it. Try doing that
+	to the button.
 </p>
 <button
 	onclick={() => {
@@ -65,9 +64,9 @@
 	</div>
 </button>
 <p>
-	Now Let's interact with the "select" tag that has a few corresponding "option"s. Use tab or shift
-	+ tab as before followed by Enter or Space, but once selected, you can navigate the options with
-	the arrow keys. Navigate to "Spongebob" and press Enter or Space key.
+	Now let's interact with the select element. Use tab or shift + tab as before to focus it. but once
+	focused, you can navigate its options with the arrow keys. Navigate to "Spongebob" and press Enter
+	or Space key.
 </p>
 <div class="w-fit">
 	<select
@@ -86,24 +85,24 @@
 	</div>
 </div>
 <p>
-	As you can see, these tags are already designed to handle keyboard navigation, which is very
-	convenient for us as developers. This leads us into an important realization: using the correct
-	HTML tags for the job will make a web application accessible by default.
+	These elements are designed to handle keyboard navigation, which is very convenient for us as
+	developers. This leads us to an important realization: using semantically correct HTML elements
+	gets us most of the way there when it comes to accessibility.
 </p>
 <h2 class="mt-8 text-2xl">1b: Semantic HTML > Custom Roles and Attributes</h2>
 <p class="mt-2">
-	By understanding what HTML tags to use for the job, we can already make accessible applications!
-	But there are some cases where we need to add styles or functionality that the native tag does not
-	offer. This is often seen with the select element. As you may have noticed, it looks rather bland.
-	And it can only be stylized to a certain extent. If we wanted to, we could build one from scratch
-	with a div. Then we would be able to control all of the styles 100%. However, just a div alone
-	would now strip away the accessibility that came with the select element. How do we handle this?
-	That is where we use roles and attributes.
+	There are some cases where we want to add additional styles or functionality that a element does
+	not offer. Lets take the select element as an example (Fun fact: <a
+		href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select"
+		>customizable select</a
+	> elements will be implemented in the near future). By default it has a very bare and simple style.
+	Lets walk through building our own. We'll be adding ARIA roles and attributes to enhance the accessibility
+	of our new custom select. ARIA stands for Accessible Rich Internet Applications.
 </p>
 
 <CodeBlock
 	language="html"
-	code="<div role='select' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
+	code="<div role='combobox' aria-expanded='false' aria-haspopup='listbox' tabindex='0' aria-labelledby='select-label'>
 	    <span id='select-label'>Choose an option</span>
 	  </div>"
 />
@@ -111,41 +110,48 @@
 <h3 class="text-2xl">Explanation of the Attributes</h3>
 <ol class="mt-2 flex flex-col gap-2">
 	<li>
-		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">role ="select"</h4>
-		<p>Indicates that the element acts as a custom select dropdown.</p>
-	</li>
-	<li>
-		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">aria-expanded="false"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">role ='combobox'</h4>
 		<p>
-			Specifies whether the dropdown is expanded (true) or collapsed (false). Update this
-			dynamically when the dropdown opens or closes.
+			Indicates that the element acts as a input element that controls another element such as a
+			listbox. In other words, this element will have a popup with some options that we can select
+			from.
 		</p>
 	</li>
 	<li>
-		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">aria-haspopup="listbox"</h4>
-		<p>Indicates that the dropdown will display a listbox (typically the dropdown options).</p>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">aria-expanded='false'</h4>
+		<p>
+			Specifies whether the element is expanded (true) or collapsed (false). Update this dynamically
+			when the element opens or closes.
+		</p>
 	</li>
 	<li>
-		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">tabindex="0"</h4>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">aria-haspopup='listbox'</h4>
 		<p>
-			Makes the div focusable via keyboard navigation. Users can navigate to it with the Tab key.
+			Indicates that the element will display a popup listbox (this will be the dropdown that
+			contains our options).
 		</p>
+	</li>
+	<li>
+		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">tabindex='0'</h4>
+		<p>Makes the div focusable by keyboard.</p>
 	</li>
 	<li>
 		<h4 class="font-mono font-bold text-green-800 dark:text-green-500">
-			aria-labelledby="select-label"
+			aria-labelledby='select-label'
 		</h4>
 		<p>
-			Associates the div with an element id ("span" in this case) so screen readers announce what
-			the dropdown represents. The label text is "Choose an option" in this example.
+			This will make the element with the id "select-label" ("span" in this case) act as a label
+			which will be read out to <a
+				href="https://developer.mozilla.org/en-US/docs/Glossary/Screen_reader">screen readers.</a
+			> The label text is "Choose an option" in this example.
 		</p>
 	</li>
 </ol>
 <p class="mt-8">
-	That was exhausting.. All of this just to emulate what was already there in the select tag. And we
-	haven't even added support for using the up and down arrow keys on the options. Now you can see
-	why it is best to avoid custom implementations like this as much as possible. Just remember,
-	native HTML elements are accessible by default!
+	That was exhausting.. All of this just to emulate what was already there in the select element,
+	and it's not even functional yet. Now you can see why it is best to avoid custom implementations
+	like this as much as possible. Using semantic HTML isn't just good practice — it's one of the
+	easiest ways to boost accessibility out of the box.
 </p>
 <Quiz
 	><RadioGroup
