@@ -157,3 +157,13 @@
 	<GlobalNotifications />
 	{@render children()}
 </div>
+<footer
+	class="bg-slate-50 py-8 text-slate-900 shadow-sm md:pl-80 dark:bg-slate-950 dark:text-slate-200"
+>
+	<div class="mx-auto max-w-3xl px-2">
+		<p>© 2025 W3b Dojo. All rights reserved.</p>
+		<a href="https://www.flaticon.com/free-icons/japan" title="japan icons"
+			>Japan icons created by Freepik - Flaticon</a
+		>
+	</div>
+</footer>
