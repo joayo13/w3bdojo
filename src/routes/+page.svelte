@@ -19,20 +19,20 @@
 	<h2 class="mt-8 text-2xl">What is it?</h2>
 	<p class="mt-2">
 		This is a set of tutorials meant for both total beginners, and intermediate developers. It is
-		meant to be a comprehensive introduction to web accessibility.
+		meant to be a comprehensive guide to web accessibility.
 	</p>
 	<h2 class="mt-8 text-2xl">How does it work?</h2>
 	<p class="mt-2">
-		Each lesson will be composed of a brief reading section, code examples, and at the end a quiz /
-		fill in the blank section. You can choose lessons in any order, as they don't build on one
-		another.
+		Each lesson will be composed of reading sections, interactive widgets, code examples, and at the
+		end a quiz section. The lessons don't build on one another. So you can choose lessons in any
+		order.
 	</p>
 	<h2 class="mt-8 text-2xl">Contributing</h2>
 	<p class="mt-2">
-		If you're looking to get some experience with open-source, here's a place to do it! Whether it
-		be suggestions for a new lesson or improvements to the structure of existing ones. <a
-			href="https://github.com/joayo13/w3bdojo/issues">Create a new issue</a
-		> and start helping today!
+		If you're looking to get some experience with open-source, here's the place to do it! Whether it
+		be working on new lessons, improvements to lesson structure / grammar, bug fixes, or
+		accessibility enhancements. <a href="https://github.com/joayo13/w3bdojo/issues"
+			>start helping today!</a
+		>
 	</p>
-	<LessonLink href="/lessons/lesson-1" text="Start Lesson 1" />
 </section>
