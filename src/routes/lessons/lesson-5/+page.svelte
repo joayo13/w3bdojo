@@ -36,9 +36,9 @@
 
 <h2 class="mt-8 text-2xl">Use of color</h2>
 <p class="mt-2">
-	Here we'll use our quiz sections as an example. Imagine if we changed the border colors to green
-	for correct and red for incorrect answers. For someone who's color blind, they wouldn't even be
-	able to tell what they got correct!
+	Here we'll use our quiz sections as an example. After submitting, If we were to use a green border
+	color for questions you answered correctly, a colorblind user would have no idea what was going
+	on.
 </p>
 <p class="mt-2">
 	This is why we chose to use text content and symbols to display information. While you can use
@@ -58,7 +58,7 @@
 		<p class="font-bold">Other elements and larger text: 3:1</p>
 	</li>
 </ol>
-<p class="mt-8">You are right to ask: what do those numbers mean?</p>
+<p class="mt-8">You are right to ask: what do these numbers mean?</p>
 <p class="mt-2">
 	It's two numbers that each reflect relative luminance (how bright a color is). Together, they
 	create a contrast ratio. 21:1 being black on white. We won't go over the math behind this but be
