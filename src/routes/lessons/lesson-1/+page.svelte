@@ -202,6 +202,4 @@
 			correctAnswer="Associates an element to another with an id"
 		/>
 	</Quiz>
-
-	<LessonLink href="/lessons/lesson-2" text="Start Lesson 2" />
 </section>

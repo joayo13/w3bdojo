@@ -113,5 +113,3 @@
 		correctAnswer="Because I am awesome."
 	/>
 </Quiz>
-
-<LessonLink href="/lessons/lesson-5" text="Start Lesson 5" />

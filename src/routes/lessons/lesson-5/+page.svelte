@@ -136,5 +136,3 @@
 		correctAnswer="1.5"
 	/>
 </Quiz>
-
-<LessonLink text="Return to home" href="/" />

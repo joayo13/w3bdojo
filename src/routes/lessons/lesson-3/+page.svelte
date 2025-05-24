@@ -114,5 +114,3 @@
 		correctAnswer="Indicates whether an element is open or expanded"
 	/>
 </Quiz>
-
-<LessonLink href="/lessons/lesson-4" text="Start Lesson 4" />

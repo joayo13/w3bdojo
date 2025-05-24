@@ -139,6 +139,4 @@
 			correctAnswer="All of the above"
 		/>
 	</Quiz>
-
-	<LessonLink href="/lessons/lesson-3" text="Start Lesson 3" />
 </section>
