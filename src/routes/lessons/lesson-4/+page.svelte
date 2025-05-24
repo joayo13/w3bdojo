@@ -31,30 +31,30 @@
 </p>
 
 <h2>How to get Lighthouse scores in Chrome</h2>
-<ol class="flex flex-col gap-2">
+<ol>
 	<li>
-		<h4>1. Open Chrome and navigate to the website you want to test.</h4>
+		<h4>Open Chrome and navigate to the website you want to test.</h4>
 	</li>
 	<li>
 		<h4>
-			2. Press <strong>F12</strong> to open <strong>DevTools</strong>, or right-click anywhere on
-			the page and select Inspect.
+			Press <strong>F12</strong> to open <strong>DevTools</strong>, or right-click anywhere on the
+			page and select Inspect.
 		</h4>
 	</li>
 	<li>
-		<h4>3. Go to the <strong>Lighthouse</strong> tab in DevTools.</h4>
+		<h4>Go to the <strong>Lighthouse</strong> tab in DevTools.</h4>
 	</li>
 	<li>
 		<h4>
-			4. Choose the type of report you want (Mobile/Desktop, Performance, Accessibility, SEO, etc.).
+			Choose the type of report you want (Mobile/Desktop, Performance, Accessibility, SEO, etc.).
 		</h4>
 	</li>
 	<li>
-		<h4>5. Click <strong>Generate Report</strong>.</h4>
+		<h4>Click <strong>Generate Report</strong>.</h4>
 	</li>
 	<li>
 		<h4>
-			6. After a few moments, the Lighthouse report will appear with scores and suggestions for
+			After a few moments, the Lighthouse report will appear with scores and suggestions for
 			improvement.
 		</h4>
 	</li>
@@ -63,23 +63,21 @@
 <div class="mt-8 h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
 
 <h2>How to get Lighthouse scores in Firefox</h2>
-<ol class="flex flex-col gap-2">
+<ol>
 	<li>
-		<h4>1. Install the Lighthouse extension from the Chrome Web Store (works in Firefox).</h4>
+		<h4>Install the Lighthouse extension from the Chrome Web Store (works in Firefox).</h4>
 	</li>
 	<li>
-		<h4>2. After installation, click the Lighthouse icon in the toolbar.</h4>
+		<h4>After installation, click the Lighthouse icon in the toolbar.</h4>
 	</li>
 	<li>
-		<h4>
-			3. Select the type of report you want (Mobile/Desktop, Performance, Accessibility, etc.).
-		</h4>
+		<h4>Select the type of report you want (Mobile/Desktop, Performance, Accessibility, etc.).</h4>
 	</li>
 	<li>
-		<h4>4. Click <strong>Generate Report</strong>.</h4>
+		<h4>Click <strong>Generate Report</strong>.</h4>
 	</li>
 	<li>
-		<h4>5. The report will show up in a new tab with scores and improvement tips.</h4>
+		<h4>The report will show up in a new tab with scores and improvement tips.</h4>
 	</li>
 </ol>
 

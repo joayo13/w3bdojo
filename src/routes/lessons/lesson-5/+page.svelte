@@ -51,7 +51,7 @@
 	For users with poor vision or colorblind users, we also must ensure our elements have at the least
 	these contrast ratios:
 </p>
-<ol class="flex flex-col gap-2">
+<ol>
 	<li>
 		<p class="font-bold">Normal body text: 4.5:1</p>
 	</li>
