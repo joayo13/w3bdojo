@@ -4,7 +4,6 @@
 	import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import GlobalNotifications from '$lib/components/GlobalNotifications.svelte';
-	import logo from '/logo.png';
 	let darkMode = $state(false);
 	let mobileNavLinksVisible = $state(false);
 	let { children } = $props();
@@ -47,7 +46,7 @@
 	class="fixed z-10 flex h-16 w-full items-center justify-between bg-slate-50 px-2 text-slate-900 shadow-sm dark:bg-slate-950 dark:text-slate-200"
 >
 	<span class="flex items-center gap-2">
-		<img src={logo} class="w-8" alt="w3b dojo logo" />
+		<img src="/logo.png" class="w-8" alt="w3b dojo logo" />
 		<a href="/" class="font-mono text-xl font-bold no-underline">W3b Dojo</a>
 	</span>
 	<button
