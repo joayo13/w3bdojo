@@ -2,6 +2,6 @@
 	let { children } = $props();
 </script>
 
-<section class="max-w-3xl px-2">
+<section class="prose lg:prose-xl dark:prose-invert">
 	{@render children()}
 </section>

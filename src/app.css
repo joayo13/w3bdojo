@@ -1,19 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@plugin "@tailwindcss/typography";
 
 /* System Fonts with system-ui */
 body {
 	font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol';
-}
-
-h1 {
-	@apply tracking-tight
-}
-
-p {
-	@apply leading-relaxed
 }
 
 a {

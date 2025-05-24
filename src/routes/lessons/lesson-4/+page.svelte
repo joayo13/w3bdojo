@@ -17,19 +17,21 @@
 	/>
 </svelte:head>
 
-<h1 class="text-4xl font-semibold">Testing Accessibility</h1>
-<p class="mt-8">
+<h1>Testing Accessibility</h1>
+
+<p>
 	This section of the tutorial assumes you are using the Chrome or Firefox Browser. (If you aren't
 	you should, as this is the standard for web development)
 </p>
-<p class="mt-2">
+<p>
 	You might have heard the term "Lighthouse scores" in web development circles. What it means is a
 	score that gets assigned to a webpage measuring four categories. Performance, Accessibility, Best
 	Practices and SEO. Obviously we are only concerned with Accessibility. But keep in mind that you
 	should strive to have high lighthouse scores in general.
 </p>
-<h2 class="mt-8 text-2xl">How to get Lighthouse scores in Chrome</h2>
-<ol class="mt-2 flex flex-col gap-2">
+
+<h2>How to get Lighthouse scores in Chrome</h2>
+<ol class="flex flex-col gap-2">
 	<li>
 		<h4>1. Open Chrome and navigate to the website you want to test.</h4>
 	</li>
@@ -57,9 +59,11 @@
 		</h4>
 	</li>
 </ol>
+
 <div class="mt-8 h-px w-full bg-neutral-900 dark:bg-neutral-200"></div>
-<h2 class="mt-8 text-2xl">How to get Lighthouse scores in Firefox</h2>
-<ol class="mt-2 flex flex-col gap-2">
+
+<h2>How to get Lighthouse scores in Firefox</h2>
+<ol class="flex flex-col gap-2">
 	<li>
 		<h4>1. Install the Lighthouse extension from the Chrome Web Store (works in Firefox).</h4>
 	</li>
@@ -79,15 +83,16 @@
 	</li>
 </ol>
 
-<p class="mt-8">
+<p>
 	Great, now that will be a tool you can take with you and make great use of in the future. Another
 	great tool to have is a screen reader, so you can personally test how a screen reader will behave
 	on your website. The two screen readers we'll recommend are NVDA and JAWS, both of which are free
 	and open source! We won't cover installation steps and how to use them, as you can find that
 	information for your screen reader on their respective websites.
 </p>
-<Quiz
-	><RadioGroup
+
+<Quiz>
+	<RadioGroup
 		name="What is are the four categories measured by Lighthouse scores?"
 		options={[
 			'Responsiveness, Accessibility, SEO and Design',
@@ -108,4 +113,5 @@
 		correctAnswer="Because I am awesome."
 	/>
 </Quiz>
+
 <LessonLink href="/lessons/lesson-5" text="Start Lesson 5" />

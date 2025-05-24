@@ -62,7 +62,7 @@
 <!-- desktop nav links -->
 <nav
 	aria-labelledby="lessons-header"
-	class="fixed hidden h-screen w-80 flex-col bg-slate-200 px-4 pt-16 text-right text-slate-900 md:flex dark:bg-slate-800 dark:text-slate-200"
+	class="fixed hidden h-screen w-80 flex-col bg-slate-200 px-4 pt-16 text-right text-slate-900 lg:flex dark:bg-slate-800 dark:text-slate-200"
 >
 	<h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
 	<ul class="relative mt-8 flex flex-col gap-8">
@@ -155,13 +155,13 @@
 
 <div
 	id="main-content"
-	class="flex min-h-screen justify-center bg-slate-100 pt-32 text-lg text-neutral-900 md:pl-80 dark:bg-slate-900 dark:text-neutral-200"
+	class="flex min-h-screen justify-center bg-slate-100 pt-32 text-lg text-neutral-900 lg:pl-80 dark:bg-slate-900 dark:text-neutral-200"
 >
 	<GlobalNotifications />
 	{@render children()}
 </div>
 <footer
-	class="bg-slate-50 py-8 text-slate-900 shadow-sm md:pl-80 dark:bg-slate-950 dark:text-slate-200"
+	class="bg-slate-50 py-8 text-slate-900 shadow-sm lg:pl-80 dark:bg-slate-950 dark:text-slate-200"
 >
 	<div class="mx-auto max-w-3xl px-2">
 		<p>© 2025 W3b Dojo. All rights reserved.</p>

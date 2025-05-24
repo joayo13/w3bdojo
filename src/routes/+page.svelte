@@ -14,21 +14,24 @@
 	/>
 </svelte:head>
 
-<section class="max-w-3xl px-2">
-	<h1 class="text-4xl font-semibold">Welcome to W3b Dojo!</h1>
-	<h2 class="mt-8 text-2xl">What is it?</h2>
-	<p class="mt-2">
-		This is a set of tutorials meant for both total beginners, and intermediate developers. It is
+<section class="prose lg:prose-xl dark:prose-invert">
+	<h1>Welcome to W3b Dojo!</h1>
+
+	<h2>What is it?</h2>
+	<p>
+		This is a set of tutorials meant for both total beginners and intermediate developers. It is
 		meant to be a comprehensive guide to web accessibility.
 	</p>
-	<h2 class="mt-8 text-2xl">How does it work?</h2>
-	<p class="mt-2">
+
+	<h2>How does it work?</h2>
+	<p>
 		Each lesson will be composed of reading sections, interactive widgets, code examples, and at the
-		end a quiz section. The lessons don't build on one another. So you can choose lessons in any
+		end a quiz section. The lessons don't build on one another, so you can choose lessons in any
 		order.
 	</p>
-	<h2 class="mt-8 text-2xl">Contributing</h2>
-	<p class="mt-2">
+
+	<h2>Contributing</h2>
+	<p>
 		If you're looking to get some experience with open-source, here's the place to do it! Whether it
 		be working on new lessons, improvements to lesson structure / grammar, bug fixes, or
 		accessibility enhancements. <a href="https://github.com/joayo13/w3bdojo/issues"

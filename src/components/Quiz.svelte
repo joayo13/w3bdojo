@@ -33,7 +33,7 @@
 	setContext('isSubmitted', () => isSubmitted);
 </script>
 
-<h2 class="mt-8 text-4xl font-semibold">Test Yourself</h2>
+<h2>Test Yourself</h2>
 <form onsubmit={(e) => handleSubmit(e)}>
 	{@render children()}
 	<button class="submit-button mt-8" type="submit">Submit</button>

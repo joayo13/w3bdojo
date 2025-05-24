@@ -46,37 +46,44 @@
 	/>
 </svelte:head>
 
-<h1 class="text-4xl font-semibold">ARIA 101</h1>
-<p class="mt-8">
+<h1>ARIA 101</h1>
+
+<p>
 	ARIA can be used to add extra accessibility information to tags. It's how we would add
 	accessibility to a plain div that is trying to emulate a select or other tag. So in general, you
 	will mostly avoid ARIA unless you are trying to create custom versions of native elements. But,
-	there are instances that ARIA can be used to enhance native HTML. Here, we'll cover 3 Key ARIA
-	Attributes: aria-controls, aria-expanded, and aria-label
+	there are instances that ARIA can be used to enhance native HTML. Here, we'll cover 3 key ARIA
+	attributes: <code>aria-controls</code>, <code>aria-expanded</code>, and <code>aria-label</code>.
 </p>
-<h2 class="mt-8 text-2xl">3a: Aria controls and aria-expanded</h2>
-<p class="mt-2">
+
+<h2>3a: Aria controls and aria-expanded</h2>
+
+<p>
 	Imagine that you are building a navigation for a shopping website, and when you hover over the
 	shop link, you want a dropdown of some options to appear: t-shirts, pants, socks etc. Once you
 	have built the dropdown menu, you need a way to communicate this relationship of link to dropdown
-	to a screen reader. With aria-controls, we are saying to the screen reader "This link controls
-	this element with this id" the element in this example being the dropdown menu. Aria-expanded says
-	"if i am true then the dropdown is showing, if i am false then it is not". Here is a code snippet
-	that demonstrates this.
+	to a screen reader. With <code>aria-controls</code>, we are saying to the screen reader “This link
+	controls this element with this id” — the element in this example being the dropdown menu.
+	<code>aria-expanded</code> says “if I am true then the dropdown is showing, if I am false then it is
+	not.” Here is a code snippet that demonstrates this.
 </p>
+
 <CodeBlock language="html" code={codeSnippet} />
-<h2 class="text-2xl">Aria Label</h2>
-<p class="mt-2">
+
+<h2>Aria Label</h2>
+
+<p>
 	If you've ever had a window popup when on a website, you'll have likely seen the common convention
-	of a X button in the top corner of the popup, that will close the popup upon being clicked. For a
-	screen reader, it wouldn't be able to decipher what the image of an x would be. It would therefore
-	have no meaning and just be some button. It would be useful if we could have a message for screen
-	readers that will say that this button closes the window. This is where we'd use aria-label. This
-	is nice and simple. Just add the aria-label attribute to your element and fill it in with text
-	such as "Close Popup".
+	of an "X" button in the top corner of the popup that will close the popup upon being clicked. For
+	a screen reader, it wouldn't be able to decipher what the image of an "X" would be. It would
+	therefore have no meaning and just be some button. It would be useful if we could have a message
+	for screen readers that will say that this button closes the window. This is where we'd use
+	<code>aria-label</code>. This is nice and simple. Just add the <code>aria-label</code> attribute to
+	your element and fill it in with text such as “Close Popup.”
 </p>
-<Quiz
-	><RadioGroup
+
+<Quiz>
+	<RadioGroup
 		name="When should you add an aria-label to something?"
 		options={[
 			'When it is aria',
@@ -84,7 +91,7 @@
 			'When a screen reader needs additional info',
 			'All of the above'
 		]}
-		correctAnswer="When it needs to swap places with another element"
+		correctAnswer="When a screen reader needs additional info"
 	/>
 	<RadioGroup
 		name="What does aria-controls do?"
@@ -107,4 +114,5 @@
 		correctAnswer="Indicates whether an element is open or expanded"
 	/>
 </Quiz>
+
 <LessonLink href="/lessons/lesson-4" text="Start Lesson 4" />
