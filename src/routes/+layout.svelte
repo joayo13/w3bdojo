@@ -155,7 +155,7 @@
 
 <div
 	id="main-content"
-	class="flex min-h-screen justify-center bg-slate-100 pt-32 text-lg text-neutral-900 lg:pl-80 dark:bg-slate-900 dark:text-neutral-200"
+	class="flex min-h-screen justify-center bg-slate-100 px-2 pt-32 text-lg text-neutral-900 lg:pl-80 dark:bg-slate-900 dark:text-neutral-200"
 >
 	<GlobalNotifications />
 	{@render children()}
