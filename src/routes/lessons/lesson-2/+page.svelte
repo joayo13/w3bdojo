@@ -1,6 +1,5 @@
 <script>
 	import CodeBlock from '../../../components/CodeBlock.svelte';
-	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
 	const skipLinkCode = `

@@ -1,8 +1,6 @@
 <script>
-	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
-	let isSubmitted = $state(false);
 </script>
 
 <svelte:head>

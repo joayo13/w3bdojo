@@ -1,7 +1,6 @@
 <script>
 	import CodeBlock from '../../../components/CodeBlock.svelte';
 	import ContrastChecker from '../../../components/ContrastChecker.svelte';
-	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
 	const codeSnippetRemoveSlider = `@media (prefers-reduced-motion: reduce) {

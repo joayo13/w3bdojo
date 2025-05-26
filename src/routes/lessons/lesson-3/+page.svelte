@@ -1,9 +1,7 @@
 <script>
 	import CodeBlock from '../../../components/CodeBlock.svelte';
-	import LessonLink from '../../../components/LessonLink.svelte';
 	import Quiz from '../../../components/Quiz.svelte';
 	import RadioGroup from '../../../components/RadioGroup.svelte';
-	let isSubmitted = $state(false);
 	const jsCode = `document.getElementById('shopLink').addEventListener('mouseover', function() {
       const dropdown = document.getElementById('dropdown');
       const expanded = this.getAttribute('aria-expanded') === 'true';

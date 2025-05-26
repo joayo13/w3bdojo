@@ -1,7 +1,3 @@
-<script>
-	import LessonLink from '../components/LessonLink.svelte';
-</script>
-
 <svelte:head>
 	<title>W3b Dojo - Web Accessibility Tutorials</title>
 	<meta
