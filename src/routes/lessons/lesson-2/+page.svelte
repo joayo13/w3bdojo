@@ -72,7 +72,7 @@
 	/>
 </svelte:head>
 
-<section class="prose max-w-none lg:prose-xl dark:prose-invert">
+<section>
 	<h1>Skip Links and Tab Index</h1>
 
 	<p>

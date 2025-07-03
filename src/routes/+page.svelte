@@ -10,7 +10,7 @@
 	/>
 </svelte:head>
 
-<section class="prose lg:prose-xl dark:prose-invert">
+<section class="prose lg:prose-lg dark:prose-invert">
 	<h1>Welcome to W3b Dojo!</h1>
 
 	<h2>What is it?</h2>

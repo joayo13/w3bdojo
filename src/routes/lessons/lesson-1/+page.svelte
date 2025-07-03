@@ -27,7 +27,7 @@
 	/>
 </svelte:head>
 
-<section class="prose max-w-none lg:prose-xl dark:prose-invert">
+<section>
 	<h1>Keyboard Navigation and Semantic HTML</h1>
 
 	<p>
