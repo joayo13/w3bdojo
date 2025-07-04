@@ -121,7 +121,7 @@
 			</svg>
 		</button>
 		<h2 class="mt-14 text-2xl" id="lessons-header">Accessibility Lessons</h2>
-		<ul class="mt-8 flex flex-col gap-8 text-xl">
+		<ul class="mt-8 flex flex-col gap-8">
 			<li>
 				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-1">Keyboard Accessibility</a>
 			</li>
