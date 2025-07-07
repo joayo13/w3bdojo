@@ -64,7 +64,7 @@
 	aria-labelledby="lessons-header"
 	class="fixed hidden h-screen w-80 flex-col bg-slate-200 px-4 pt-16 text-right text-slate-900 lg:flex dark:bg-slate-800 dark:text-slate-200"
 >
-	<h2 class="mt-14 text-2xl" id="lessons-header">Lessons</h2>
+	<h2 class="mt-14 text-2xl font-bold" id="lessons-header">Lessons</h2>
 	<ul class="relative mt-8 flex flex-col gap-8">
 		<li>
 			<a href="/lessons/lesson-1">Keyboard Accessibility</a>
@@ -120,7 +120,7 @@
 				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 			</svg>
 		</button>
-		<h2 class="mt-14 text-2xl" id="lessons-header">Accessibility Lessons</h2>
+		<h2 class="mt-14 text-2xl font-bold" id="lessons-header">Lessons</h2>
 		<ul class="mt-8 flex flex-col gap-8">
 			<li>
 				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-1">Keyboard Accessibility</a>
