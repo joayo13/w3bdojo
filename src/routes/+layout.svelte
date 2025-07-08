@@ -166,8 +166,5 @@
 >
 	<div class="mx-auto max-w-3xl px-2">
 		<p>© 2025 W3b Dojo. All rights reserved.</p>
-		<a href="https://www.flaticon.com/free-icons/japan" title="japan icons"
-			>Japan icons created by Freepik - Flaticon</a
-		>
 	</div>
 </footer>
