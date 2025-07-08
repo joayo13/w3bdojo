@@ -27,10 +27,8 @@
 	}
 </script>
 
-<fieldset
-	class="mt-4 flex flex-col gap-4 rounded-lg border border-slate-900 bg-slate-200 px-6 py-4 dark:border-slate-200 dark:bg-slate-800"
->
-	<legend class="text-2xl">{name}</legend>
+<fieldset class="mt-4 flex flex-col gap-4">
+	<legend><h3>{name}</h3></legend>
 	{#each options as option}
 		<label>
 			<input

@@ -33,10 +33,10 @@
 	setContext('isSubmitted', () => isSubmitted);
 </script>
 
-<h2>Test Yourself</h2>
+<h2>Quiz section</h2>
 <form onsubmit={(e) => handleSubmit(e)}>
 	{@render children()}
-	<button class="submit-button mt-8" type="submit">Submit</button>
+	<button class="submit-button my-16" type="submit">Submit</button>
 </form>
 {#if isSubmitted}
 	<p class="mt-8">

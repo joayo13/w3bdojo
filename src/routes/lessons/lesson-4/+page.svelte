@@ -89,7 +89,7 @@
 
 <Quiz>
 	<RadioGroup
-		name="What is are the four categories measured by Lighthouse scores?"
+		name="What are the four categories measured by Lighthouse scores?"
 		options={[
 			'Responsiveness, Accessibility, SEO and Design',
 			'Performance, Style, Accessibility and SEO',
