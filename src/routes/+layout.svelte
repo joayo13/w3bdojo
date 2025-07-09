@@ -7,6 +7,7 @@
 	let darkMode = $state(false);
 	let mobileNavLinksVisible = $state(false);
 	let { children } = $props();
+	import { fade } from 'svelte/transition';
 
 	onMount(() => {
 		if (localStorage.getItem('theme') === 'dark') {
@@ -63,9 +64,9 @@
 <!-- desktop nav links -->
 <nav
 	aria-labelledby="lessons-header"
-	class="fixed hidden h-screen w-80 flex-col bg-slate-200 px-4 pt-16 text-right text-slate-900 lg:flex dark:bg-slate-800 dark:text-slate-200"
+	class="fixed hidden h-screen flex-col bg-slate-200 px-10 pt-16 text-slate-900 lg:flex dark:bg-slate-800 dark:text-slate-200"
 >
-	<h2 class="mt-14 text-2xl font-bold" id="lessons-header">Lessons</h2>
+	<h2 class="mt-14 text-xl font-bold" id="lessons-header">Lessons</h2>
 	<ul class="relative mt-8 flex flex-col gap-8">
 		<li>
 			<a href="/lessons/lesson-1">Keyboard Accessibility</a>
@@ -100,6 +101,7 @@
 <!-- /desktop nav links -->
 <!-- mobile nav links -->
 {#if mobileNavLinksVisible}
+	<div transition:fade class="fixed inset-0 z-10 bg-black opacity-50"></div>
 	<nav
 		aria-labelledby="lessons-header"
 		transition:slide={{ delay: 100, duration: 300, easing: quintOut, axis: 'x' }}
@@ -121,7 +123,7 @@
 				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
 			</svg>
 		</button>
-		<h2 class="mt-14 text-2xl font-bold" id="lessons-header">Lessons</h2>
+		<h2 class="mt-14 text-xl font-bold" id="lessons-header">Lessons</h2>
 		<ul class="mt-8 flex flex-col gap-8">
 			<li>
 				<a onclick={toggleMobileNavLinks} href="/lessons/lesson-1">Keyboard Accessibility</a>

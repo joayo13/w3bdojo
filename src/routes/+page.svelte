@@ -12,17 +12,13 @@
 
 <section class="prose lg:prose-lg dark:prose-invert">
 	<h1>Welcome to W3b Dojo!</h1>
-
-	<h2>What is it?</h2>
 	<p>
 		This is a set of tutorials meant for both total beginners and intermediate developers. It is
 		meant to be a comprehensive guide to web accessibility.
 	</p>
-
-	<h2>How does it work?</h2>
 	<p>
-		Each lesson will be composed of reading sections, interactive widgets, code examples, and at the
-		end a quiz section. The lessons don't build on one another, so you can choose lessons in any
+		Each lesson will be composed of a reading section with interactive widgets and code examples,
+		and a quiz section. The lessons don't build on one another, so you can choose lessons in any
 		order.
 	</p>
 
