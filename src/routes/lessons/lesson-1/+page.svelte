@@ -165,8 +165,8 @@
 	<p>
 		That was exhausting… All of this just to emulate what was already there in the select element,
 		and it's not even functional yet. Now you can see why it is best to avoid custom implementations
-		like this as much as possible. Using semantic HTML isn't just good practice — it's one of the
-		easiest ways to boost accessibility out of the box.
+		like this as much as possible. Using semantically correct HTML isn't just good practice, it's
+		one of the easiest ways to boost accessibility out of the box.
 	</p>
 
 	<Quiz>

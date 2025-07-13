@@ -24,7 +24,7 @@
 
 	<h2>Contributing</h2>
 	<p>
-		If you're looking to get some experience with open-source, here's the place to do it! Whether it
+		If you're looking to get some experience with open source, here's the place to do it! Whether it
 		be working on new lessons, improvements to lesson structure / grammar, bug fixes, or
 		accessibility enhancements. <a href="https://github.com/joayo13/w3bdojo/issues"
 			>start helping today!</a
