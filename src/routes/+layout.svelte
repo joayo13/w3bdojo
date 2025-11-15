@@ -47,8 +47,8 @@
 	class="fixed z-10 flex h-16 w-full items-center justify-between bg-slate-50 px-2 text-slate-900 shadow-sm dark:bg-slate-950 dark:text-slate-200"
 >
 	<span class="flex items-center gap-2">
-		<a href="/">
-			<img src="/logo.png" class="w-14" alt="w3b dojo logo" />
+		<a class="text-sm font-bold no-underline" href="/">
+			W3BDOJO v1.0
 		</a>
 	</span>
 	<button
@@ -60,14 +60,24 @@
 		<div class="h-1 w-3/4 rounded-full bg-slate-900 dark:bg-slate-200"></div>
 		<div class="h-1 w-full rounded-full bg-slate-900 dark:bg-slate-200"></div>
 	</button>
+	<button
+				onclick={toggleDarkMode}
+				aria-label="Toggle dark mode"
+				aria-pressed={darkMode}
+				class="hidden xl:block relative ml-auto h-8 w-16 rounded-full border border-slate-900 dark:border-slate-200"
+			>
+				<div
+					class="absolute right-0 top-1/2 size-8 -translate-y-1/2 bg-moon-svg dark:left-0 dark:bg-sun-svg"
+				></div>
+			</button>
 </nav>
 <!-- desktop nav links -->
 <nav
 	aria-labelledby="lessons-header"
-	class="fixed hidden h-screen flex-col bg-slate-200 px-10 pt-16 text-slate-900 lg:flex dark:bg-slate-800 dark:text-slate-200"
+	class="fixed hidden h-screen flex-col bg-slate-200 px-4 pt-16 text-slate-900 md:flex dark:bg-slate-800 dark:text-slate-200"
 >
 	<h2 class="mt-14 text-xl font-bold" id="lessons-header">Lessons</h2>
-	<ul class="relative mt-8 flex flex-col gap-8">
+	<ul class="relative mt-8 ml-4 flex flex-col gap-8">
 		<li>
 			<a href="/lessons/lesson-1">Keyboard Accessibility</a>
 		</li>
@@ -84,17 +94,7 @@
 			<a href="/lessons/lesson-5">Visual Accessibility</a>
 		</li>
 		<li>
-			<div aria-hidden="true" class="h-px w-full bg-slate-900 dark:bg-slate-200"></div>
-			<button
-				onclick={toggleDarkMode}
-				aria-label="Toggle dark mode"
-				aria-pressed={darkMode}
-				class="relative ml-auto mt-8 h-8 w-16 rounded-full border border-slate-900 dark:border-slate-200"
-			>
-				<div
-					class="absolute right-0 top-1/2 size-8 -translate-y-1/2 bg-moon-svg dark:left-0 dark:bg-sun-svg"
-				></div>
-			</button>
+			
 		</li>
 	</ul>
 </nav>
@@ -158,7 +158,7 @@
 
 <div
 	id="main-content"
-	class="flex min-h-screen justify-center bg-slate-100 px-2 pt-32 text-lg text-neutral-900 lg:pl-80 dark:bg-slate-900 dark:text-neutral-200"
+	class="flex min-h-screen justify-center bg-slate-100 px-2 pt-32 text-lg text-neutral-900 md:pl-60 dark:bg-slate-900 dark:text-neutral-200"
 >
 	<GlobalNotifications />
 	{@render children()}
@@ -166,7 +166,7 @@
 <footer
 	class="bg-slate-50 py-8 text-slate-900 shadow-sm lg:pl-80 dark:bg-slate-950 dark:text-slate-200"
 >
-	<div class="mx-auto max-w-3xl px-2">
+	<div class="mx-auto max-w-fit px-2">
 		<p>© 2025 W3b Dojo. All rights reserved.</p>
 	</div>
 </footer>
